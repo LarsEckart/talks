@@ -5,5 +5,5 @@
 
 
 
-include: lars.md
+include: lars
 
