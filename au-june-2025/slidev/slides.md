@@ -5,7 +5,7 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: AI assisted Software Development
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -211,7 +211,7 @@ h1 {
 }
 
 .timeline-continued::before {
-  background: linear-gradient(180deg, #146b8c 0%, #4EC5D4 50%, #ffd700 100%);
+  background: linear-gradient(180deg, #4EC5D4 0%, #146b8c 50%, #4EC5D4 100%);
   top: -20px;
 }
 
@@ -236,7 +236,7 @@ transition: slide-up
 
 <div class="timeline-container timeline-continued">
   <div class="timeline-item" v-click>
-    <div class="timeline-dot highlight"></div>
+    <div class="timeline-dot"></div>
     <div class="timeline-content">
       <h3>May 2025</h3>
       <p>Claude Code GA launch</p>
@@ -244,13 +244,29 @@ transition: slide-up
   </div>
   
   <div class="timeline-item" v-click>
-    <div class="timeline-dot highlight"></div>
+    <div class="timeline-dot"></div>
     <div class="timeline-content">
       <h3>May 2025</h3>
       <p>Amp GA launch</p>
     </div>
   </div>
+  
+  <div class="timeline-item" v-click>
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3>June 2025</h3>
+      <p>MCP servers</p>
+    </div>
+  </div>
 </div>
+
+
+<!--
+Speaker Notes:
+- Claude Code GA launch: Anthropic's agentic command line tool launched at "Code with Claude" developer conference on May 22, 2025, transitioning from research preview to general availability with SDK and GitHub integrations
+- Amp GA launch: Advanced AI development platform for enhanced coding workflows
+- MCP servers: Model Context Protocol servers provide standardized interfaces for AI models to access external tools and data sources, enabling more powerful and extensible AI applications
+-->
 
 <style>
 h1 {
@@ -359,7 +375,7 @@ h1 {
 }
 
 .timeline-continued::before {
-  background: linear-gradient(180deg, #146b8c 0%, #4EC5D4 50%, #ffd700 100%);
+  background: linear-gradient(180deg, #4EC5D4 0%, #146b8c 50%, #4EC5D4 100%);
   top: -20px;
 }
 
@@ -371,12 +387,6 @@ h1 {
   margin-top: 20px;
 }
 </style>
-
-<!--
-Speaker Notes:
-- Claude Code GA launch: Anthropic's agentic command line tool launched at "Code with Claude" developer conference on May 22, 2025, transitioning from research preview to general availability with SDK and GitHub integrations
-- Amp GA launch: Advanced AI development platform for enhanced coding workflows
--->
 
 ---
 transition: slide-up
