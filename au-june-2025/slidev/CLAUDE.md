@@ -10,7 +10,7 @@ This is a Slidev presentation project - a modern slide deck framework for develo
 
 Development and build commands:
 - `pnpm install` - Install dependencies
-- `pnpm dev` - Start development server (opens automatically at http://localhost:3030)
+- `pnpm dev` - Start development server (opens automatically at http://localhost:3030) (i usually do this for you)
 - `pnpm build` - Build presentation for production
 - `pnpm export` - Export slides to PDF/images
 
@@ -66,3 +66,25 @@ This presentation includes custom timeline styling for history slides:
 - History slide: June 2022 to November 2024 (5 items)
 - History - 2025 slide: May 2025 to June 2025 (3 items including MCP servers)
 - All timeline items use consistent `h3` (date) and `p` (description) structure
+
+## Development Workflow
+
+**Verification with Playwright:**
+Our workflow includes verification of all slide changes using Playwright browser automation. After implementing any slide modifications (especially interactive features, animations, or styling changes), always use Playwright to:
+
+- Navigate to the affected slides
+- Test click interactions and v-click animations
+- Verify visual transitions and scaling effects
+- Take screenshots to confirm layout and positioning
+- Ensure all interactive elements work as expected
+
+The development server runs at `http://localhost:3030` and Playwright can access slides directly via URL patterns like `/4` for slide 4, with click states via `?clicks=N` parameters.
+
+**Example Verification Process:**
+1. Make changes to slides.md
+2. Navigate to the slide using Playwright
+3. Test each click/interaction step by step
+4. Take screenshots at each state
+5. Verify the final visual result matches expectations
+
+This ensures all slide functionality works correctly in the actual presentation environment before delivery.
