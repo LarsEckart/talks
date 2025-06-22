@@ -471,6 +471,157 @@ The Pair AI Journey - A Story of Evolution
 ---
 transition: slide-up
 level: 2
+layout: center
+class: text-center
+---
+
+# Disclaimer
+
+<div class="disclaimer-content">
+  <div class="soft-language" v-click>
+    <span class="highlight">can influence</span> • <span class="highlight">may affect</span> • <span class="highlight">might lead to</span>
+  </div>
+  
+  <div class="soft-language" v-click>
+    <span class="highlight">could result in</span> • <span class="highlight">has the potential to</span> • <span class="highlight">is correlated with</span>
+  </div>
+  
+  <div class="soft-language" v-click>
+    <span class="highlight">seems to</span> • <span class="highlight">appears to</span> • <span class="highlight">tends to</span>
+  </div>
+  
+  <div class="soft-language" v-click>
+    <span class="highlight">is likely to</span> • <span class="highlight">is often observed to</span> • <span class="highlight">in some cases</span>
+  </div>
+  
+  <div class="soft-language" v-click>
+    <span class="highlight">reportedly</span>
+  </div>
+  
+  <p v-click class="disclaimer-note">
+    <em>All sources use very soft language - there are not many hard facts</em>
+  </p>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.disclaimer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.soft-language {
+  font-size: 1.2em;
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.highlight {
+  color: #4EC5D4;
+  font-weight: 600;
+  padding: 0.2rem 0.4rem;
+  background: rgba(78, 197, 212, 0.1);
+  border-radius: 4px;
+  margin: 0 0.2rem;
+}
+
+.disclaimer-note {
+  margin-top: 2rem;
+  font-size: 1.1em;
+  color: #888;
+  font-style: italic;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #4EC5D4;
+}
+</style>
+
+---
+layout: center
+class: text-center
+---
+
+# 2nd Disclaimer: It Depends
+
+<div class="depends-content">
+  <div class="depends-item" v-click>
+    <h3>Which model you ask</h3>
+    <p>Using smaller models to demonstrate some of the shortcomings</p>
+  </div>
+  
+  <div class="depends-item" v-click>
+    <h3>Through which interface you ask</h3>
+  </div>
+  
+  <div class="depends-item" v-click>
+    <h3>What it already knows about you</h3>
+    <p>(ChatGPT memory)</p>
+  </div>
+  
+  <div class="depends-item" v-click>
+    <h3>How often you ask</h3>
+  </div>
+  
+  <div class="depends-item" v-click>
+    <h3>When you ask</h3>
+    <p>(how many "r" in strawberry)</p>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.depends-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.depends-item {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.depends-item h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.depends-item p {
+  color: #888;
+  font-size: 1em;
+  margin: 0;
+  font-style: italic;
+}
+</style>
+
 ---
 
 # Kent Beck Skills
