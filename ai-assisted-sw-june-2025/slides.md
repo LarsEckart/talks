@@ -623,6 +623,244 @@ h1 {
 </style>
 
 ---
+layout: center
+class: text-center
+---
+
+# Hitting a Moving Target
+
+<div class="centered-image">
+  <img src="/pictures/moving-target.png" alt="Moving Target" />
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 2rem auto;
+}
+
+.centered-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+</style>
+
+---
+layout: center
+---
+
+# Where it started
+
+<div class="content-section">
+  <div class="main-concept" v-click>
+    <h2>LLMs are document completion engines</h2>
+  </div>
+  
+  <div class="interactions-section" v-click>
+    <h3>General interactions</h3>
+    <ul class="interaction-list">
+      <li v-click>asking questions & getting explanations</li>
+      <li v-click>debugging code snippets</li>
+      <li v-click>translating Estonian to English</li>
+      <li v-click>and brainstorming ideas</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main-concept {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-concept h2 {
+  font-size: 1.8em;
+  color: #4EC5D4;
+  font-weight: 600;
+  padding: 1.5rem;
+  background: rgba(78, 197, 212, 0.1);
+  border-radius: 12px;
+  border: 2px solid rgba(78, 197, 212, 0.3);
+}
+
+.interactions-section {
+  text-align: left;
+}
+
+.interactions-section h3 {
+  font-size: 1.4em;
+  color: #4EC5D4;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.interaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interaction-list li {
+  font-size: 1.2em;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.interaction-list li:before {
+  content: "•";
+  color: #4EC5D4;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+</style>
+
+---
+layout: center
+---
+
+# Assigning Roles
+
+<div class="role-content">
+  <div class="role-image" v-click>
+    <img src="/pictures/assign-role.png" alt="Assigning Roles" />
+  </div>
+  
+  <div class="role-points">
+    <div class="point-item" v-click>
+      <h3>can improve responses</h3>
+    </div>
+    <div class="point-item" v-click>
+      <h3>the more detail, the better</h3>
+    </div>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.role-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  height: 400px;
+}
+
+.role-image {
+  flex: 0 0 auto;
+}
+
+.role-image img {
+  max-height: 350px;
+  max-width: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.role-points {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.point-item {
+  padding: 1.2rem 1.5rem;
+  background: rgba(78, 197, 212, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.point-item h3 {
+  font-size: 1.3em;
+  color: #4EC5D4;
+  margin: 0;
+  font-weight: 600;
+}
+</style>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="audience-slide">
+  <img src="/pictures/audience.png" alt="Audience" />
+</div>
+
+<style>
+.audience-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.audience-slide img {
+  max-height: 80vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+</style>
+
+---
 
 # Kent Beck Skills
 
