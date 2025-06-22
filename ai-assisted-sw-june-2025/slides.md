@@ -862,6 +862,230 @@ class: text-center
 
 ---
 
+# Prompting: Clear and Precise
+
+<div class="prompting-content">
+  
+  <div class="principle-section" v-click>
+    <h3>Acronyms and technical terms</h3>
+    <div class="example-pair">
+      <div class="bad-example">
+        <span class="label">Bad:</span>
+        <p>I'm having DB connection issues. How to fix it?</p>
+      </div>
+      <div class="good-example">
+        <span class="label">Better:</span>
+        <p>I am encountering a connection timeout issue while trying to connect to my Oracle database using JDBC. How can I resolve it?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="principle-section" v-click>
+    <h3>Ask for positives instead of negatives</h3>
+    <div class="example-pair">
+      <div class="bad-example">
+        <span class="label">Bad:</span>
+        <p>Don't use global variables</p>
+      </div>
+      <div class="good-example">
+        <span class="label">Better:</span>
+        <p>Use local variables or dependency injection to manage state</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.prompting-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.principle-section {
+  margin-bottom: 3rem;
+}
+
+.principle-section h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.example-pair {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.bad-example, .good-example {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.bad-example {
+  background: rgba(255, 107, 107, 0.1);
+  border-left: 4px solid #ff6b6b;
+}
+
+.good-example {
+  background: rgba(78, 197, 212, 0.1);
+  border-left: 4px solid #4EC5D4;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bad-example .label {
+  color: #ff6b6b;
+}
+
+.good-example .label {
+  color: #4EC5D4;
+}
+
+.bad-example p, .good-example p {
+  margin: 0.8rem 0 0 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+</style>
+
+---
+
+# Prompting: Clear and Precise (2/2)
+
+<div class="prompting-content">
+  
+  <div class="principle-section" v-click>
+    <h3>Bolster your command with a reason</h3>
+    <div class="example-pair">
+      <div class="bad-example">
+        <span class="label">Bad:</span>
+        <p>Avoid deeply nested conditionals</p>
+      </div>
+      <div class="good-example">
+        <span class="label">Better:</span>
+        <p>Avoid deeply nested conditionals to keep the logic readable and maintainable</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="principle-section" v-click>
+    <h3>Avoid absolutes</h3>
+    <div class="example-pair">
+      <div class="bad-example">
+        <span class="label">Bad:</span>
+        <p>Never use recursion.</p>
+      </div>
+      <div class="good-example">
+        <span class="label">Better:</span>
+        <p>Prefer iteration over recursion for performance, unless the recursive solution is more elegant or the depth is small.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.prompting-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.principle-section {
+  margin-bottom: 3rem;
+}
+
+.principle-section h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.example-pair {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.bad-example, .good-example {
+  flex: 1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.bad-example {
+  background: rgba(255, 107, 107, 0.1);
+  border-left: 4px solid #ff6b6b;
+}
+
+.good-example {
+  background: rgba(78, 197, 212, 0.1);
+  border-left: 4px solid #4EC5D4;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bad-example .label {
+  color: #ff6b6b;
+}
+
+.good-example .label {
+  color: #4EC5D4;
+}
+
+.bad-example p, .good-example p {
+  margin: 0.8rem 0 0 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+</style>
+
+---
+
 # Kent Beck Skills
 
 <div class="centered-image">

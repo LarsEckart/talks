@@ -69,22 +69,65 @@ This presentation includes custom timeline styling for history slides:
 
 ## Development Workflow
 
-**Verification with Playwright:**
-Our workflow includes verification of all slide changes using Playwright browser automation. After implementing any slide modifications (especially interactive features, animations, or styling changes), always use Playwright to:
+**Verification with Playwright (MANDATORY):**
+**EVERY slide creation or modification MUST be verified with Playwright before considering the work complete.** This is not optional - it catches syntax errors, layout issues, and ensures presentation quality.
 
+Always use Playwright to:
 - Navigate to the affected slides
-- Test click interactions and v-click animations
+- Test click interactions and v-click animations  
 - Verify visual transitions and scaling effects
 - Take screenshots to confirm layout and positioning
 - Ensure all interactive elements work as expected
+- **Catch Vue parsing errors and missing tags that break slides**
 
 The development server runs at `http://localhost:3030` and Playwright can access slides directly via URL patterns like `/4` for slide 4, with click states via `?clicks=N` parameters.
 
-**Example Verification Process:**
+**MANDATORY Verification Process:**
 1. Make changes to slides.md
-2. Navigate to the slide using Playwright
+2. **IMMEDIATELY verify with Playwright** - navigate to the slide
 3. Test each click/interaction step by step
-4. Take screenshots at each state
+4. Take screenshots at each state  
 5. Verify the final visual result matches expectations
+6. Fix any errors found and re-verify
 
-This ensures all slide functionality works correctly in the actual presentation environment before delivery.
+**Why this is mandatory:**
+- Catches syntax errors (missing `</style>` tags, Vue parsing issues)
+- Prevents content overflow and layout problems
+- Ensures slides work in actual presentation environment
+- Maintains professional presentation quality
+
+**Never skip this step** - slides that haven't been Playwright-verified should be considered incomplete.
+
+## Common Issues and Solutions
+
+**Content Overflow Issues:**
+When creating content-heavy slides (like the "Prompting: Clear and Precise" slide), content may overflow beyond the visible slide area, causing important information to be cut off.
+
+**Symptoms:**
+- Content appears truncated at the bottom of slides
+- Only partial sections visible during presentation
+- Missing interactive elements or text
+
+**Solution Strategy (PREFERRED APPROACH):**
+1. **Split into multiple slides**: Create continuation slides with the same title plus "(2/2)", "(3/3)", etc.
+2. **Optimize content hierarchy**: Prioritize essential information and shorten headings
+3. **Maintain proper spacing**: Keep readable font sizes and adequate spacing for presentation clarity
+4. **Test with Playwright**: Always verify content visibility with screenshot testing after changes
+
+**Example Fix Applied:**
+- Split "Prompting: Clear and Precise" into two slides
+- First slide: "Acronyms and technical terms" + "Ask for positives instead of negatives"
+- Second slide: "Prompting: Clear and Precise (2/2)" with "Bolster your command with a reason" + "Avoid absolutes"
+- Restored proper spacing and font sizes for presentation readability
+- Each slide contains 2 principles with full examples
+
+**What to avoid:**
+- ❌ Prefer avoiding scrollbars (`overflow-y: auto`) in presentations as they're not suitable for live presentation flow
+- ❌ Compressing content to unreadable sizes reduces presentation effectiveness
+- ❌ Very small fonts can be hard to read from audience viewing distances
+
+**Prevention:**
+- Plan content density during slide creation
+- Use progressive disclosure (v-click) to reveal content gradually
+- Always test slide content visibility with Playwright verification workflow
+- Consider audience viewing distance when sizing text and elements
