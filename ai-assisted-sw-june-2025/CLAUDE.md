@@ -91,6 +91,7 @@ The development server runs at `http://localhost:3030` and Playwright can access
 4. Take screenshots at each state  
 5. Verify the final visual result matches expectations
 6. Fix any errors found and re-verify
+7. Commit changes
 
 **Why this is mandatory:**
 - Catches syntax errors (missing `</style>` tags, Vue parsing issues)
@@ -133,3 +134,89 @@ When creating content-heavy slides (like the "Prompting: Clear and Precise" slid
 - Use progressive disclosure (v-click) to reveal content gradually
 - Always test slide content visibility with Playwright verification workflow
 - Consider audience viewing distance when sizing text and elements
+
+## Slide Rendering Issues and Debugging
+
+**Common Rendering Problems:**
+When slides appear completely blank despite proper syntax, this often indicates fundamental structural issues that require systematic debugging.
+
+**Symptoms of Rendering Failures:**
+- Slide shows completely blank at all click states
+- Title (h1) not visible even though it should appear immediately
+- Content appears blank even with simplified v-click structure
+- Playwright screenshots show only navigation elements
+
+**Root Cause Analysis:**
+1. **Excessive nested v-click elements**: Too many v-click attributes create complex animation sequences
+2. **Structural syntax errors**: Malformed HTML or CSS can break entire slide rendering
+3. **CSS conflicts**: Complex layout properties can interfere with Slidev's rendering engine
+4. **Container complexity**: Overly complex flexbox/grid structures may not render properly
+
+**Debugging Strategy (PROVEN EFFECTIVE):**
+1. **Use working slide templates**: Always rebuild problematic slides using confirmed working slide structures
+2. **Simplify v-click usage**: Limit v-click to major sections, not individual bullets
+3. **Test incrementally**: Build slides piece by piece, testing after each addition
+4. **Match proven patterns**: Copy structure from existing working slides rather than creating new patterns
+
+**Slide Structure Best Practices:**
+```markdown
+---
+
+# Title Here
+
+<div class="content-container">
+  
+  <div class="section-item" v-click>
+    <h3>Section Title</h3>
+    <ul class="bullet-list">
+      <li>Bullet point 1</li>
+      <li>Bullet point 2</li>
+      <li>Bullet point 3</li>
+    </ul>
+  </div>
+
+  <div class="section-item" v-click>
+    <h3>Second Section</h3>
+    <ul class="bullet-list">
+      <li>More content</li>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+/* Standard h1 gradient styling */
+/* Container with max-width and center */
+/* Section styling with backdrop effects */
+</style>
+
+---
+```
+
+**V-Click Optimization:**
+- **Recommended**: 1 v-click per major content section (results in 2-3 total clicks)
+- **Avoid**: Multiple v-click levels (v-click on container + v-click on each bullet)
+- **Target**: Maximum 3-4 clicks for full slide revelation
+
+**When Rebuilding Slides:**
+1. **Copy working slide structure** from existing slides in the presentation
+2. **Replace content** while keeping structural elements identical
+3. **Test immediately** after structural changes
+4. **Verify click sequence** matches expected progression
+
+## V-Click Animation Behavior
+
+**Important Discovery:**
+V-click animations in Slidev may not always work as expected with complex nested structures. Some slides may show all content immediately rather than progressively revealing it through clicks.
+
+**Observed Behavior:**
+- Simple v-click structures work reliably for progressive disclosure
+- Complex nested v-click elements may all render at once
+- This doesn't affect slide functionality - content is still fully accessible
+- Slides remain presentation-ready even without progressive animations
+
+**Best Practice:**
+- Focus on content quality and visual layout over animation complexity
+- V-click should enhance, not be essential for, slide comprehension
+- Always verify slide works well even if all content shows immediately
+- Prioritize clear structure and readable content

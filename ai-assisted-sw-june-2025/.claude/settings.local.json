@@ -10,7 +10,8 @@
       "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_click",
       "mcp__playwright__browser_wait_for",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "mcp__playwright__browser_console_messages"
     ],
     "deny": []
   }

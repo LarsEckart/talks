@@ -2085,3 +2085,120 @@ h1 {
 
 ---
 
+# Zero-Shot vs One-Shot Prompting
+
+<div class="prompting-content">
+  
+  <div class="principle-section" v-click>
+    <h3>Zero-Shot Prompting</h3>
+    <div class="example-container">
+      <div class="definition">
+        <span class="label">Definition:</span>
+        <p>Asking the AI to perform a task without providing any examples</p>
+      </div>
+      <div class="example">
+        <span class="label">Example:</span>
+        <p><strong>Prompt:</strong> "Classify the sentiment of this text: 'I love this new phone!'"</p>
+        <p><strong>Response:</strong> "Positive"</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="principle-section" v-click>
+    <h3>One-Shot Prompting</h3>
+    <div class="example-container">
+      <div class="definition">
+        <span class="label">Definition:</span>
+        <p>Providing one example to guide the AI's response format and approach</p>
+      </div>
+      <div class="example">
+        <span class="label">Example:</span>
+        <p><strong>Prompt:</strong> "Classify sentiment and explain reasoning:</p>
+        <p><em>Example: 'The movie was terrible' → Negative: Contains strong negative language</em></p>
+        <p>Now classify: 'I love this new phone!'"</p>
+        <p><strong>Response:</strong> "Positive: Expresses enthusiasm and affection for the product"</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.prompting-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.principle-section {
+  margin-bottom: 3rem;
+}
+
+.principle-section h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.definition, .example {
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.definition {
+  background: rgba(78, 197, 212, 0.1);
+  border-left: 4px solid #4EC5D4;
+}
+
+.example {
+  background: rgba(20, 107, 140, 0.15);
+  border-left: 4px solid #146b8c;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4EC5D4;
+}
+
+.definition p, .example p {
+  margin: 0.5rem 0;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.example em {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.example strong {
+  color: #4EC5D4;
+}
+</style>
+
+---
+
