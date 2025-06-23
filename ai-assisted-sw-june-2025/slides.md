@@ -2104,6 +2104,91 @@ h1 {
     </div>
   </div>
 
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.prompting-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.principle-section {
+  margin-bottom: 3rem;
+}
+
+.principle-section h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.definition, .example {
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.definition {
+  background: rgba(78, 197, 212, 0.1);
+  border-left: 4px solid #4EC5D4;
+}
+
+.example {
+  background: rgba(20, 107, 140, 0.15);
+  border-left: 4px solid #146b8c;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4EC5D4;
+}
+
+.definition p, .example p {
+  margin: 0.5rem 0;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.example em {
+  color: #a0a0a0;
+  font-style: italic;
+}
+
+.example strong {
+  color: #4EC5D4;
+}
+</style>
+
+---
+
+# Zero-Shot vs One-Shot Prompting (2/2)
+
+<div class="prompting-content">
+  
   <div class="principle-section" v-click>
     <h3>One-Shot Prompting</h3>
     <div class="example-container">
@@ -2201,4 +2286,219 @@ h1 {
 </style>
 
 ---
+
+# System Prompt and User Prompt
+
+<div class="content-container">
+  
+  <div class="section-item" v-click>
+    <h3>System Prompt</h3>
+    <ul class="bullet-list">
+      <li>Instructions provided by application developer</li>
+      <li>Comes first, gets more attention</li>
+      <li>Instruction hierarchy, model is trained to prioritize privileged instructions</li>
+    </ul>
+  </div>
+
+  <div class="section-item" v-click>
+    <h3>User Experience</h3>
+    <ul class="bullet-list">
+      <li>Usually not visible/editable by users</li>
+      <li>Both get combined into 1 query to the model</li>
+      <li><a href="https://github.com/asgeirtj/system_prompts_leaks" target="_blank">https://github.com/asgeirtj/system_prompts_leaks</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-item {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.section-item h3 {
+  color: #4EC5D4;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bullet-list li {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.bullet-list li::before {
+  content: "•";
+  color: #4EC5D4;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bullet-list li:last-child {
+  margin-bottom: 0;
+}
+
+.bullet-list a {
+  color: #4EC5D4;
+  text-decoration: underline;
+}
+
+.bullet-list a:hover {
+  color: #ffffff;
+}
+</style>
+
+---
+
+# Minimal AI Application Architecture
+
+<div class="diagram-container">
+
+```mermaid
+graph LR
+    A[😊 User] -->|Query| B[🤖 Model API]
+    B -->|Response| A
+    
+    subgraph API [" "]
+        B
+        C[Generation<br/>Processing]
+        B -.-> C
+    end
+    
+    classDef userStyle fill:#4EC5D4,stroke:#146b8c,stroke-width:3px,color:#000
+    classDef apiStyle fill:#146b8c,stroke:#4EC5D4,stroke-width:3px,color:#fff
+    classDef genStyle fill:#2B90B6,stroke:#4EC5D4,stroke-width:2px,color:#fff
+    
+    class A userStyle
+    class B apiStyle
+    class C genStyle
+```
+
+</div>
+
+<div class="caption" v-click>
+  <em>The simplest architecture for running an AI application</em>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.diagram-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diagram-container .mermaid {
+  background: rgba(20, 107, 140, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid rgba(78, 197, 212, 0.3);
+}
+
+.caption {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2em;
+  color: #4EC5D4;
+  font-style: italic;
+}
+</style>
+
+---
+
+# AI Application Architecture
+
+<div class="image-container">
+  <img src="/pictures/ai-app-real.png" alt="AI Application Real Architecture" class="main-image" />
+</div>
+
+<style>
+h1 {
+  background: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%, #4EC5D4 30%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 2s linear infinite;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.main-image {
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+</style>
 
