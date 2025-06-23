@@ -1086,6 +1086,301 @@ h1 {
 
 ---
 
+# Formatting Input
+
+<div class="formatting-content">
+  <div class="main-principle" v-click>
+    <p>You can help the model understand logical boundaries of your prompt and context data using a combination of <strong>Markdown formatting</strong> and <strong>XML tags</strong></p>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.formatting-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.main-principle {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(20, 107, 140, 0.2);
+  border-radius: 16px;
+  border: 2px solid rgba(78, 197, 212, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.main-principle p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.main-principle strong {
+  color: #4EC5D4;
+  font-weight: 700;
+}
+</style>
+
+---
+
+# Formatting Input
+
+<div class="formatting-content">
+  
+  <div class="instruction-section" v-click>
+    <h3>Put your instructions at the beginning of the prompt</h3>
+    <h3>And at the end as safety net</h3>
+  </div>
+
+  <div class="attention-section" v-click>
+    <h3>U-shaped attention curve / Valley of Meh</h3>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.formatting-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.instruction-section, .attention-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.instruction-section h3, .attention-section h3 {
+  color: #4EC5D4;
+  font-size: 1.4em;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.instruction-section h3:last-child {
+  margin: 0.8rem 0 0 0;
+}
+</style>
+
+---
+
+# Formatting Input (2/2)
+
+<div class="formatting-content">
+
+  <div class="transition-section" v-click>
+    <h3>End of your prompt should firmly transition from explaining to solving the problem</h3>
+    <p>As simple as including a question mark at the end</p>
+  </div>
+
+  <div class="remember-section" v-click>
+    <h3>Remember:</h3>
+    <p>LLMs read through your prompt once, from beginning to end.</p>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.formatting-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.transition-section, .remember-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.transition-section h3, .remember-section h3 {
+  color: #4EC5D4;
+  font-size: 1.4em;
+  margin: 0 0 0.8rem 0;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.transition-section p, .remember-section p {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin: 0;
+  line-height: 1.5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.remember-section {
+  background: rgba(78, 197, 212, 0.2);
+  border-left-color: #4EC5D4;
+}
+</style>
+
+---
+
+# Formatting Input (3/3)
+
+<div class="formatting-content">
+  
+  <div class="fluffy-section" v-click>
+    <h3>Reduce "fluffy" and imprecise descriptions</h3>
+  </div>
+
+  <div class="example-section" v-click>
+    <div class="bad-example">
+      <span class="label">Bad:</span>
+      <p>The description for this product should be fairly short, a few sentences only, and not too much more.</p>
+    </div>
+    <div class="good-example">
+      <span class="label">Better:</span>
+      <p>Use a 3 to 5 sentence paragraph to describe this product.</p>
+    </div>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.formatting-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.fluffy-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.fluffy-section h3 {
+  color: #4EC5D4;
+  font-size: 1.6em;
+  margin: 0;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.example-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.bad-example, .good-example {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.bad-example {
+  background: rgba(255, 107, 107, 0.15);
+  border-left: 4px solid #ff6b6b;
+}
+
+.good-example {
+  background: rgba(78, 197, 212, 0.15);
+  border-left: 4px solid #4EC5D4;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.bad-example .label {
+  color: #ff6b6b;
+}
+
+.good-example .label {
+  color: #4EC5D4;
+}
+
+.bad-example p, .good-example p {
+  color: #ffffff;
+  font-size: 1.1em;
+  margin: 0;
+  line-height: 1.5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+</style>
+
+---
+
 # Kent Beck Skills
 
 <div class="centered-image">
@@ -1107,6 +1402,144 @@ h1 {
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+</style>
+
+---
+
+# Vibe Coding
+
+<div class="tweet-slide">
+  <img src="/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
+</div>
+
+<style>
+.tweet-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.tweet-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+</style>
+
+---
+
+# Formatting Output
+
+<div class="formatting-content">
+  <div class="output-category" v-click>
+    <h3><span class="category-icon">📊</span> Table</h3>
+    <div class="example-text">
+      "Please create a comparison table of..."
+    </div>
+  </div>
+  
+  <div class="output-category" v-click>
+    <h3><span class="category-icon">📝</span> List</h3>
+    <div class="example-text">
+      "List the top 5..." • "Create a bulleted list..." • "Enumerate the steps..."
+    </div>
+  </div>
+  
+  <div class="output-category" v-click>
+    <h3><span class="category-icon">⚙️</span> Markdown / HTML / JSON / CSV</h3>
+    <div class="example-text">
+      "Format the response as JSON..." • "Return the data in CSV format..."
+    </div>
+  </div>
+  
+  <div class="output-category" v-click>
+    <h3><span class="category-icon">📋</span> Text hierarchy</h3>
+    <div class="example-text">
+      "Organize with clear headings..." • "Use numbered sections..."
+    </div>
+  </div>
+  
+  <div class="output-category" v-click>
+    <h3><span class="category-icon">🔢</span> LaTeX</h3>
+    <div class="example-text">
+      "Show the mathematical formula in LaTeX format..."
+    </div>
+  </div>
+  
+  <div class="output-category" v-click>
+    <h3><span class="category-icon">📈</span> Mermaid</h3>
+    <div class="example-text">
+      "Create a flowchart diagram..." • "Generate a sequence diagram..."
+    </div>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.formatting-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.output-category {
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.8);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(78, 197, 212, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.output-category:hover {
+  background: rgba(20, 107, 140, 0.9);
+  transform: translateY(-2px);
+}
+
+.output-category h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-icon {
+  font-size: 1.2em;
+}
+
+.example-text {
+  color: #ffffff;
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  font-style: italic;
 }
 </style>
 
