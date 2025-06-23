@@ -10,9 +10,11 @@ This is a Slidev presentation project - a modern slide deck framework for develo
 
 Development and build commands:
 - `pnpm install` - Install dependencies
-- `pnpm dev` - Start development server (opens automatically at http://localhost:3030) (i usually do this for you)
+- `pnpm dev` - Start development server (opens automatically at http://localhost:3030) (user handles this - DO NOT run this command)
 - `pnpm build` - Build presentation for production
 - `pnpm export` - Export slides to PDF/images
+
+**Important:** The development server is managed by the user. If you cannot access slides with Playwright, inform the user that they should start the dev server rather than attempting to start it yourself.
 
 Presentation navigation:
 - Access presenter mode: Press `P` or navigate to http://localhost:3030/presenter

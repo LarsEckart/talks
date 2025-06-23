@@ -569,7 +569,58 @@ class: text-center
     <h3>What it already knows about you</h3>
     <p>(ChatGPT memory)</p>
   </div>
-  
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.depends-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.depends-item {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.depends-item h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.depends-item p {
+  color: #888;
+  font-size: 1em;
+  margin: 0;
+  font-style: italic;
+}
+</style>
+
+---
+layout: center
+class: text-center
+---
+
+# 2nd Disclaimer: It Depends (2/2)
+
+<div class="depends-content">
   <div class="depends-item" v-click>
     <h3>How often you ask</h3>
   </div>
@@ -1457,7 +1508,76 @@ h1 {
       "Format the response as JSON..." • "Return the data in CSV format..."
     </div>
   </div>
-  
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.formatting-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.output-category {
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.8);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(78, 197, 212, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.output-category:hover {
+  background: rgba(20, 107, 140, 0.9);
+  transform: translateY(-2px);
+}
+
+.output-category h3 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-icon {
+  font-size: 1.2em;
+}
+
+.example-text {
+  color: #ffffff;
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  font-style: italic;
+}
+</style>
+
+---
+
+# Formatting Output (2/2)
+
+<div class="formatting-content">
   <div class="output-category" v-click>
     <h3><span class="category-icon">📋</span> Text hierarchy</h3>
     <div class="example-text">
@@ -1499,7 +1619,7 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -1540,6 +1660,325 @@ h1 {
   line-height: 1.6;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   font-style: italic;
+}
+</style>
+
+---
+
+# How to trigger Chain of Thought (2/2)
+
+<div class="content-container">
+  <div class="content-item" v-click>
+    <h4>Follow these steps to find an answer:</h4>
+    <ul>
+      <li v-click>Define what "fewer bugs in production" means in measurable terms</li>
+      <li v-click>Identify typical sources of bugs in OOP and in FP</li>
+      <li v-click>Consider how each paradigm mitigates or amplifies those sources</li>
+      <li v-click>Compare the outcomes and arrive at a reasoned conclusion</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.question-section {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(78, 197, 212, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.question-section h3 {
+  color: #4EC5D4;
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.content-item h4 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item ul {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.content-item li {
+  color: #ffffff;
+  font-size: 1.1em;
+  margin: 0.8rem 0;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+</style>
+
+---
+
+# Think first! / Chain of Thought
+
+<div class="thinking-content">
+  <div class="thinking-point" v-click>
+    <div class="point-bullet">•</div>
+    <p>Giving LLMs time to think step by step sometimes makes LLMs more accurate, particularly for complex tasks.</p>
+  </div>
+  
+  <div class="thinking-point" v-click>
+    <div class="point-bullet">•</div>
+    <p>Thinking only counts when it's out loud.</p>
+  </div>
+  
+  <div class="thinking-point" v-click>
+    <div class="point-bullet">•</div>
+    <p>You cannot ask LLMs to think but output only the answer - in this case, no thinking has actually occurred.</p>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.thinking-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.thinking-point {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.thinking-point:hover {
+  background: rgba(20, 107, 140, 0.25);
+  transform: translateY(-2px);
+}
+
+.point-bullet {
+  color: #4EC5D4;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 1.2rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.thinking-point p {
+  color: #ffffff;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+</style>
+
+---
+
+# How to trigger Chain of Thought
+
+<div class="content-container">
+  <div class="question-section" v-click>
+    <h3>Which software development paradigm leads to fewer bugs in production: Object-Oriented Programming (OOP) or Functional Programming (FP)?</h3>
+  </div>
+  
+  <div class="content-item" v-click>
+    <h4>Think step by step before arriving at an answer</h4>
+  </div>
+  
+  <div class="content-item" v-click>
+    <h4>Explain your rationale before giving an answer</h4>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.question-section {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(78, 197, 212, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.question-section h3 {
+  color: #4EC5D4;
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.content-item h4 {
+  color: #4EC5D4;
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item ul {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.content-item li {
+  color: #ffffff;
+  font-size: 1.1em;
+  margin: 0.8rem 0;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+</style>
+
+---
+
+# Think first! / Ordering Effects
+
+<div class="ordering-content">
+  <div class="ordering-point" v-click>
+    <div class="point-bullet">•</div>
+    <p>Claude is sometimes sensitive to ordering. This example is on the frontier of Claude's ability to understand nuanced text, and when we swap the order of the arguments from the previous example so that negative is first and positive is second, this changes Claude's overall assessment to positive.</p>
+  </div>
+  
+  <div class="ordering-point" v-click>
+    <div class="point-bullet">•</div>
+    <p>In most situations (but not all, confusingly enough), Claude is more likely to choose the second of two options, possibly because in its training data from the web, second options were more likely to be correct.</p>
+  </div>
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.ordering-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.ordering-point {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.ordering-point:hover {
+  background: rgba(20, 107, 140, 0.25);
+  transform: translateY(-2px);
+}
+
+.point-bullet {
+  color: #4EC5D4;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 1.2rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.ordering-point p {
+  color: #ffffff;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 </style>
 
