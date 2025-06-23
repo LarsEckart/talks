@@ -719,19 +719,23 @@ layout: center
 
 # Where it started
 
-<div class="content-section">
-  <div class="main-concept" v-click>
-    <h2>LLMs are document completion engines</h2>
+<div class="thinking-content">
+  <div class="thinking-point" v-click>
+    <div class="point-bullet">•</div>
+    <p><strong>LLMs are document completion engines</strong></p>
   </div>
   
-  <div class="interactions-section" v-click>
-    <h3>General interactions</h3>
-    <ul class="interaction-list">
-      <li v-click>asking questions & getting explanations</li>
-      <li v-click>debugging code snippets</li>
-      <li v-click>translating Estonian to English</li>
-      <li v-click>and brainstorming ideas</li>
-    </ul>
+  <div class="thinking-point" v-click>
+    <div class="point-bullet">•</div>
+    <div class="interaction-content">
+      <p><strong>General interactions</strong></p>
+      <ul class="interaction-list">
+        <li>asking questions & getting explanations</li>
+        <li>debugging code snippets</li>
+        <li>translating Estonian to English</li>
+        <li>and brainstorming ideas</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -744,55 +748,64 @@ h1 {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.content-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.main-concept {
-  text-align: center;
   margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.2em;
 }
 
-.main-concept h2 {
-  font-size: 1.8em;
-  color: #4EC5D4;
-  font-weight: 600;
+.thinking-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.thinking-point {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(78, 197, 212, 0.1);
+  background: rgba(20, 107, 140, 0.15);
   border-radius: 12px;
-  border: 2px solid rgba(78, 197, 212, 0.3);
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 
-.interactions-section {
-  text-align: left;
-}
-
-.interactions-section h3 {
-  font-size: 1.4em;
+.point-bullet {
   color: #4EC5D4;
-  margin-bottom: 1.5rem;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.thinking-point p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.interaction-content p {
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+  color: #4EC5D4;
   font-weight: 600;
 }
 
 .interaction-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .interaction-list li {
-  font-size: 1.2em;
-  margin: 1rem 0;
-  padding: 1rem 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  border-left: 4px solid #4EC5D4;
-  backdrop-filter: blur(10px);
+  font-size: 1.1em;
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  color: #ffffff;
+  line-height: 1.4;
 }
 
 .interaction-list li:before {
@@ -800,6 +813,7 @@ h1 {
   color: #4EC5D4;
   font-weight: bold;
   margin-right: 0.5rem;
+  margin-left: -1rem;
 }
 </style>
 
@@ -1979,6 +1993,93 @@ h1 {
   line-height: 1.4;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+</style>
+
+---
+
+# Prompting reasoning models
+
+<div class="reasoning-content">
+  
+  <div class="model-section" v-click>
+    <h3>Reasoning models</h3>
+    <ul class="model-points">
+      <li>trained to think longer and harder about complex tasks</li>
+      <li>execute tasks with high accuracy and precision</li>
+      <li>like a senior co-worker. You can give them a goal to achieve and trust them to work out the details.</li>
+    </ul>
+  </div>
+
+  <div class="model-section" v-click>
+    <h3>GPT models</h3>
+    <ul class="model-points">
+      <li>lower-latency, more cost-efficient</li>
+      <li>The workhorses</li>
+      <li>like a junior coworker. They'll perform best with explicit instructions to create a specific output.</li>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.reasoning-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.model-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(20, 107, 140, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #4EC5D4;
+  backdrop-filter: blur(10px);
+}
+
+.model-section h3 {
+  color: #4EC5D4;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.model-points {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.model-points li {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0.8rem 0;
+  position: relative;
+}
+
+.model-points li::before {
+  content: "•";
+  color: #4EC5D4;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  left: -1.2rem;
+  top: 0;
 }
 </style>
 
