@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: '#fdf6e3'
 # some information about your slides (markdown enabled)
 title: AI assisted Software Development
 info: |
@@ -17,7 +17,7 @@ class: text-center
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # open graph
@@ -41,6 +41,12 @@ Lars Eckart, June 2025
     <carbon:logo-github />
   </a>
 </div>
+
+<style>
+h1 {
+  color: #2B90B6;
+}
+</style>
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -106,13 +112,7 @@ Speaker Notes:
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
 }
 
 .timeline-container {
@@ -131,7 +131,7 @@ h1 {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #4EC5D4 0%, #146b8c 50%, #4EC5D4 100%);
+  background: linear-gradient(180deg, #2aa198 0%, #268bd2 50%, #2aa198 100%);
   transform: translateX(-50%);
 }
 
@@ -169,8 +169,8 @@ h1 {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #4EC5D4;
-  border: 3px solid #146b8c;
+  background: #2aa198;
+  border: 3px solid #268bd2;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -179,24 +179,24 @@ h1 {
 }
 
 .timeline-dot.highlight {
-  background: #ffd700;
-  border-color: #ff6b35;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  background: #b58900;
+  border-color: #cb4b16;
+  box-shadow: 0 0 15px rgba(181, 137, 0, 0.5);
 }
 
 .timeline-content {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(253, 246, 227, 0.3);
   padding: 10px 15px;
   border-radius: 8px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(78, 197, 212, 0.3);
+  border: 1px solid rgba(42, 161, 152, 0.3);
 }
 
 .timeline-content h3 {
   margin: 0 0 4px 0;
   font-size: 0.95em;
   font-weight: bold;
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .timeline-content p {
@@ -207,7 +207,7 @@ h1 {
 }
 
 .timeline-item:last-child .timeline-content {
-  border-left-color: #ffd700;
+  border-left-color: #b58900;
 }
 </style>
 
@@ -216,7 +216,7 @@ Here is another comment.
 -->
 
 ---
-transition: slide-up
+transition: fade-out
 ---
 
 # History - 2025
@@ -257,13 +257,7 @@ Speaker Notes:
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
 }
 
 .timeline-container {
@@ -282,7 +276,7 @@ h1 {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #4EC5D4 0%, #146b8c 50%, #4EC5D4 100%);
+  background: linear-gradient(180deg, #2aa198 0%, #268bd2 50%, #2aa198 100%);
   transform: translateX(-50%);
 }
 
@@ -320,8 +314,8 @@ h1 {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #4EC5D4;
-  border: 3px solid #146b8c;
+  background: #2aa198;
+  border: 3px solid #268bd2;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -330,24 +324,24 @@ h1 {
 }
 
 .timeline-dot.highlight {
-  background: #ffd700;
-  border-color: #ff6b35;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  background: #b58900;
+  border-color: #cb4b16;
+  box-shadow: 0 0 15px rgba(181, 137, 0, 0.5);
 }
 
 .timeline-content {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(253, 246, 227, 0.3);
   padding: 10px 15px;
   border-radius: 8px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(78, 197, 212, 0.3);
+  border: 1px solid rgba(42, 161, 152, 0.3);
 }
 
 .timeline-content h3 {
   margin: 0 0 4px 0;
   font-size: 0.95em;
   font-weight: bold;
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .timeline-content p {
@@ -358,11 +352,11 @@ h1 {
 }
 
 .timeline-item:last-child .timeline-content {
-  border-left-color: #ffd700;
+  border-left-color: #b58900;
 }
 
 .timeline-continued::before {
-  background: linear-gradient(180deg, #4EC5D4 0%, #146b8c 50%, #4EC5D4 100%);
+  background: linear-gradient(180deg, #2aa198 0%, #268bd2 50%, #2aa198 100%);
   top: -20px;
 }
 
@@ -397,13 +391,8 @@ transition: fade-out
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
+  margin-bottom: 2rem;
 }
 
 .image-transition-container {
@@ -449,9 +438,9 @@ h1 {
   max-width: 600px;
   object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 40px rgba(88, 110, 117, 0.4);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(78, 197, 212, 0.3);
+  border: 1px solid rgba(42, 161, 152, 0.3);
 }
 
 </style>
@@ -469,7 +458,7 @@ The Pair AI Journey - A Story of Evolution
 -->
 
 ---
-transition: slide-up
+transition: fade-out
 level: 2
 layout: center
 class: text-center
@@ -505,13 +494,7 @@ class: text-center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
 }
 
@@ -528,10 +511,10 @@ h1 {
 }
 
 .highlight {
-  color: #4EC5D4;
+  color: #2aa198;
   font-weight: 600;
   padding: 0.2rem 0.4rem;
-  background: rgba(78, 197, 212, 0.1);
+  background: rgba(42, 161, 152, 0.1);
   border-radius: 4px;
   margin: 0 0.2rem;
 }
@@ -539,12 +522,12 @@ h1 {
 .disclaimer-note {
   margin-top: 2rem;
   font-size: 1.1em;
-  color: #888;
+  color: #93a1a1;
   font-style: italic;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(253, 246, 227, 0.2);
   border-radius: 8px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
 }
 </style>
 
@@ -573,13 +556,7 @@ class: text-center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
 }
 
@@ -592,21 +569,21 @@ h1 {
 .depends-item {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(253, 246, 227, 0.2);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .depends-item h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
 }
 
 .depends-item p {
-  color: #888;
+  color: #93a1a1;
   font-size: 1em;
   margin: 0;
   font-style: italic;
@@ -633,13 +610,7 @@ class: text-center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
 }
 
@@ -652,21 +623,21 @@ h1 {
 .depends-item {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(253, 246, 227, 0.2);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .depends-item h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
 }
 
 .depends-item p {
-  color: #888;
+  color: #93a1a1;
   font-size: 1em;
   margin: 0;
   font-style: italic;
@@ -686,13 +657,7 @@ class: text-center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
 }
 
@@ -709,7 +674,7 @@ h1 {
   max-width: 100%;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -741,13 +706,7 @@ layout: center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2.2em;
@@ -764,15 +723,15 @@ h1 {
   align-items: flex-start;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .point-bullet {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 1rem;
@@ -784,13 +743,13 @@ h1 {
   margin: 0;
   font-size: 1.2em;
   line-height: 1.4;
-  color: #ffffff;
+  color: #657b83;
 }
 
 .interaction-content p {
   margin-bottom: 1rem;
   font-size: 1.2em;
-  color: #4EC5D4;
+  color: #2aa198;
   font-weight: 600;
 }
 
@@ -804,13 +763,13 @@ h1 {
   font-size: 1.1em;
   margin: 0.5rem 0;
   padding-left: 1rem;
-  color: #ffffff;
+  color: #657b83;
   line-height: 1.4;
 }
 
 .interaction-list li:before {
   content: "•";
-  color: #4EC5D4;
+  color: #2aa198;
   font-weight: bold;
   margin-right: 0.5rem;
   margin-left: -1rem;
@@ -840,13 +799,7 @@ layout: center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 1.5rem;
   text-align: center;
   font-size: 2.2em;
@@ -873,7 +826,7 @@ h1 {
   max-width: 400px;
   object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
 }
 
 .role-points {
@@ -885,16 +838,16 @@ h1 {
 
 .point-item {
   padding: 1.2rem 1.5rem;
-  background: rgba(78, 197, 212, 0.1);
+  background: rgba(42, 161, 152, 0.1);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   text-align: center;
 }
 
 .point-item h3 {
   font-size: 1.3em;
-  color: #4EC5D4;
+  color: #2aa198;
   margin: 0;
   font-weight: 600;
 }
@@ -963,13 +916,7 @@ class: text-center
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2em;
@@ -986,7 +933,7 @@ h1 {
 }
 
 .principle-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -1006,13 +953,13 @@ h1 {
 }
 
 .bad-example {
-  background: rgba(255, 107, 107, 0.1);
-  border-left: 4px solid #ff6b6b;
+  background: rgba(220, 50, 47, 0.1);
+  border-left: 4px solid #dc322f;
 }
 
 .good-example {
-  background: rgba(78, 197, 212, 0.1);
-  border-left: 4px solid #4EC5D4;
+  background: rgba(42, 161, 152, 0.1);
+  border-left: 4px solid #2aa198;
 }
 
 .label {
@@ -1023,11 +970,11 @@ h1 {
 }
 
 .bad-example .label {
-  color: #ff6b6b;
+  color: #dc322f;
 }
 
 .good-example .label {
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .bad-example p, .good-example p {
@@ -1075,13 +1022,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2em;
@@ -1098,7 +1039,7 @@ h1 {
 }
 
 .principle-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -1118,13 +1059,13 @@ h1 {
 }
 
 .bad-example {
-  background: rgba(255, 107, 107, 0.1);
-  border-left: 4px solid #ff6b6b;
+  background: rgba(220, 50, 47, 0.1);
+  border-left: 4px solid #dc322f;
 }
 
 .good-example {
-  background: rgba(78, 197, 212, 0.1);
-  border-left: 4px solid #4EC5D4;
+  background: rgba(42, 161, 152, 0.1);
+  border-left: 4px solid #2aa198;
 }
 
 .label {
@@ -1135,11 +1076,11 @@ h1 {
 }
 
 .bad-example .label {
-  color: #ff6b6b;
+  color: #dc322f;
 }
 
 .good-example .label {
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .bad-example p, .good-example p {
@@ -1161,13 +1102,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2.2em;
@@ -1186,7 +1121,7 @@ h1 {
 .main-principle {
   text-align: center;
   padding: 3rem;
-  background: rgba(20, 107, 140, 0.2);
+  background: rgba(38, 139, 210, 0.2);
   border-radius: 16px;
   border: 2px solid rgba(78, 197, 212, 0.4);
   backdrop-filter: blur(10px);
@@ -1196,12 +1131,12 @@ h1 {
   font-size: 1.4em;
   line-height: 1.6;
   margin: 0;
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  color: #657b83;
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.4);
 }
 
 .main-principle strong {
-  color: #4EC5D4;
+  color: #2aa198;
   font-weight: 700;
 }
 </style>
@@ -1225,13 +1160,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1246,18 +1175,18 @@ h1 {
 .instruction-section, .attention-section {
   margin-bottom: 3rem;
   padding: 2rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .instruction-section h3, .attention-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.4em;
   margin: 0 0 0.5rem 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 
 .instruction-section h3:last-child {
@@ -1285,13 +1214,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1306,31 +1229,31 @@ h1 {
 .transition-section, .remember-section {
   margin-bottom: 3rem;
   padding: 2rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .transition-section h3, .remember-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.4em;
   margin: 0 0 0.8rem 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 
 .transition-section p, .remember-section p {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1.2em;
   margin: 0;
   line-height: 1.5;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 
 .remember-section {
-  background: rgba(78, 197, 212, 0.2);
-  border-left-color: #4EC5D4;
+  background: rgba(42, 161, 152, 0.2);
+  border-left-color: #2aa198;
 }
 </style>
 
@@ -1359,13 +1282,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1380,19 +1297,19 @@ h1 {
 .fluffy-section {
   margin-bottom: 3rem;
   padding: 2rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   text-align: center;
 }
 
 .fluffy-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.6em;
   margin: 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 
 .example-section {
@@ -1409,13 +1326,13 @@ h1 {
 }
 
 .bad-example {
-  background: rgba(255, 107, 107, 0.15);
-  border-left: 4px solid #ff6b6b;
+  background: rgba(220, 50, 47, 0.15);
+  border-left: 4px solid #dc322f;
 }
 
 .good-example {
-  background: rgba(78, 197, 212, 0.15);
-  border-left: 4px solid #4EC5D4;
+  background: rgba(42, 161, 152, 0.15);
+  border-left: 4px solid #2aa198;
 }
 
 .label {
@@ -1428,19 +1345,19 @@ h1 {
 }
 
 .bad-example .label {
-  color: #ff6b6b;
+  color: #dc322f;
 }
 
 .good-example .label {
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .bad-example p, .good-example p {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1.1em;
   margin: 0;
   line-height: 1.5;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1453,6 +1370,10 @@ h1 {
 </div>
 
 <style>
+h1 {
+  color: #2B90B6;
+}
+
 .centered-image {
   display: flex;
   justify-content: center;
@@ -1466,7 +1387,7 @@ h1 {
   max-width: 100%;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1475,10 +1396,14 @@ h1 {
 # Vibe Coding
 
 <div class="tweet-slide">
-  <img src="/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
+  <img src="/pictures/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
 </div>
 
 <style>
+h1 {
+  color: #2B90B6;
+}
+
 .tweet-slide {
   display: flex;
   justify-content: center;
@@ -1493,7 +1418,7 @@ h1 {
   max-width: 100%;
   object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1526,13 +1451,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1549,26 +1468,26 @@ h1 {
 
 .output-category {
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.8);
+  background: rgba(38, 139, 210, 0.8);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border: 1px solid rgba(78, 197, 212, 0.4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(42, 161, 152, 0.4);
+  box-shadow: 0 4px 20px rgba(88, 110, 117, 0.2);
 }
 
 .output-category:hover {
-  background: rgba(20, 107, 140, 0.9);
+  background: rgba(38, 139, 210, 0.9);
   transform: translateY(-2px);
 }
 
 .output-category h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin: 0 0 1rem 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1579,10 +1498,10 @@ h1 {
 }
 
 .example-text {
-  color: #ffffff;
+  color: #657b83;
   font-size: 0.95em;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 1px 3px rgba(88, 110, 117, 0.3);
   font-style: italic;
 }
 </style>
@@ -1616,13 +1535,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1639,26 +1552,26 @@ h1 {
 
 .output-category {
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.8);
+  background: rgba(38, 139, 210, 0.8);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border: 1px solid rgba(78, 197, 212, 0.4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(42, 161, 152, 0.4);
+  box-shadow: 0 4px 20px rgba(88, 110, 117, 0.2);
 }
 
 .output-category:hover {
-  background: rgba(20, 107, 140, 0.9);
+  background: rgba(38, 139, 210, 0.9);
   transform: translateY(-2px);
 }
 
 .output-category h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin: 0 0 1rem 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1669,10 +1582,10 @@ h1 {
 }
 
 .example-text {
-  color: #ffffff;
+  color: #657b83;
   font-size: 0.95em;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 1px 3px rgba(88, 110, 117, 0.3);
   font-style: italic;
 }
 </style>
@@ -1695,13 +1608,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1716,15 +1623,15 @@ h1 {
 .question-section {
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(78, 197, 212, 0.15);
+  background: rgba(42, 161, 152, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   text-align: center;
 }
 
 .question-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.5em;
   margin: 0;
   font-weight: 600;
@@ -1734,14 +1641,14 @@ h1 {
 .content-item {
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .content-item h4 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin: 0;
   font-weight: 600;
@@ -1754,11 +1661,11 @@ h1 {
 }
 
 .content-item li {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1.1em;
   margin: 0.8rem 0;
   line-height: 1.4;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1785,13 +1692,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2.2em;
@@ -1808,20 +1709,20 @@ h1 {
   align-items: flex-start;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .thinking-point:hover {
-  background: rgba(20, 107, 140, 0.25);
+  background: rgba(38, 139, 210, 0.25);
   transform: translateY(-2px);
 }
 
 .point-bullet {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 1.2rem;
@@ -1830,11 +1731,11 @@ h1 {
 }
 
 .thinking-point p {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1.1em;
   line-height: 1.4;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1858,13 +1759,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2.2em;
@@ -1879,15 +1774,15 @@ h1 {
 .question-section {
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(78, 197, 212, 0.15);
+  background: rgba(42, 161, 152, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   text-align: center;
 }
 
 .question-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.5em;
   margin: 0;
   font-weight: 600;
@@ -1897,14 +1792,14 @@ h1 {
 .content-item {
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .content-item h4 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin: 0;
   font-weight: 600;
@@ -1917,11 +1812,11 @@ h1 {
 }
 
 .content-item li {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1.1em;
   margin: 0.8rem 0;
   line-height: 1.4;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1943,13 +1838,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2.2em;
@@ -1966,20 +1855,20 @@ h1 {
   align-items: flex-start;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .ordering-point:hover {
-  background: rgba(20, 107, 140, 0.25);
+  background: rgba(38, 139, 210, 0.25);
   transform: translateY(-2px);
 }
 
 .point-bullet {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 1.2rem;
@@ -1988,11 +1877,11 @@ h1 {
 }
 
 .ordering-point p {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1.1em;
   line-height: 1.4;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -2024,13 +1913,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2em;
@@ -2045,14 +1928,14 @@ h1 {
 .model-section {
   margin-bottom: 2.5rem;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .model-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.4em;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -2065,7 +1948,7 @@ h1 {
 }
 
 .model-points li {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1em;
   line-height: 1.4;
   margin: 0.8rem 0;
@@ -2074,7 +1957,7 @@ h1 {
 
 .model-points li::before {
   content: "•";
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.2em;
   font-weight: bold;
   position: absolute;
@@ -2108,13 +1991,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2em;
@@ -2131,7 +2008,7 @@ h1 {
 }
 
 .principle-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -2150,13 +2027,13 @@ h1 {
 }
 
 .definition {
-  background: rgba(78, 197, 212, 0.1);
-  border-left: 4px solid #4EC5D4;
+  background: rgba(42, 161, 152, 0.1);
+  border-left: 4px solid #2aa198;
 }
 
 .example {
-  background: rgba(20, 107, 140, 0.15);
-  border-left: 4px solid #146b8c;
+  background: rgba(38, 139, 210, 0.15);
+  border-left: 4px solid #268bd2;
 }
 
 .label {
@@ -2164,22 +2041,22 @@ h1 {
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .definition p, .example p {
   margin: 0.5rem 0;
-  color: #ffffff;
+  color: #657b83;
   line-height: 1.4;
 }
 
 .example em {
-  color: #a0a0a0;
+  color: #839496;
   font-style: italic;
 }
 
 .example strong {
-  color: #4EC5D4;
+  color: #2aa198;
 }
 </style>
 
@@ -2210,13 +2087,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2em;
@@ -2233,7 +2104,7 @@ h1 {
 }
 
 .principle-section h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.3em;
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -2252,13 +2123,13 @@ h1 {
 }
 
 .definition {
-  background: rgba(78, 197, 212, 0.1);
-  border-left: 4px solid #4EC5D4;
+  background: rgba(42, 161, 152, 0.1);
+  border-left: 4px solid #2aa198;
 }
 
 .example {
-  background: rgba(20, 107, 140, 0.15);
-  border-left: 4px solid #146b8c;
+  background: rgba(38, 139, 210, 0.15);
+  border-left: 4px solid #268bd2;
 }
 
 .label {
@@ -2266,22 +2137,22 @@ h1 {
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #4EC5D4;
+  color: #2aa198;
 }
 
 .definition p, .example p {
   margin: 0.5rem 0;
-  color: #ffffff;
+  color: #657b83;
   line-height: 1.4;
 }
 
 .example em {
-  color: #a0a0a0;
+  color: #839496;
   font-style: italic;
 }
 
 .example strong {
-  color: #4EC5D4;
+  color: #2aa198;
 }
 </style>
 
@@ -2313,13 +2184,7 @@ h1 {
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 2rem;
   text-align: center;
   font-size: 2em;
@@ -2334,14 +2199,14 @@ h1 {
 .section-item {
   margin-bottom: 2.5rem;
   padding: 1.5rem;
-  background: rgba(20, 107, 140, 0.15);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #4EC5D4;
+  border-left: 4px solid #2aa198;
   backdrop-filter: blur(10px);
 }
 
 .section-item h3 {
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.4em;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -2354,18 +2219,18 @@ h1 {
 }
 
 .bullet-list li {
-  color: #ffffff;
+  color: #657b83;
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 0.8rem;
   padding-left: 1.5rem;
   position: relative;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 1px 3px rgba(88, 110, 117, 0.3);
 }
 
 .bullet-list li::before {
   content: "•";
-  color: #4EC5D4;
+  color: #2aa198;
   font-size: 1.2em;
   font-weight: bold;
   position: absolute;
@@ -2378,12 +2243,12 @@ h1 {
 }
 
 .bullet-list a {
-  color: #4EC5D4;
+  color: #2aa198;
   text-decoration: underline;
 }
 
 .bullet-list a:hover {
-  color: #ffffff;
+  color: #657b83;
 }
 </style>
 
@@ -2404,9 +2269,9 @@ graph LR
         B -.-> C
     end
     
-    classDef userStyle fill:#4EC5D4,stroke:#146b8c,stroke-width:3px,color:#000
-    classDef apiStyle fill:#146b8c,stroke:#4EC5D4,stroke-width:3px,color:#fff
-    classDef genStyle fill:#2B90B6,stroke:#4EC5D4,stroke-width:2px,color:#fff
+    classDef userStyle fill:#2aa198,stroke:#268bd2,stroke-width:3px,color:#586e75
+    classDef apiStyle fill:#268bd2,stroke:#2aa198,stroke-width:3px,color:#fdf6e3
+    classDef genStyle fill:#268bd2,stroke:#2aa198,stroke-width:2px,color:#fdf6e3
     
     class A userStyle
     class B apiStyle
@@ -2421,13 +2286,7 @@ graph LR
 
 <style>
 h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #2B90B6;
   margin-bottom: 3rem;
   text-align: center;
   font-size: 2em;
@@ -2443,17 +2302,17 @@ h1 {
 }
 
 .diagram-container .mermaid {
-  background: rgba(20, 107, 140, 0.05);
+  background: rgba(38, 139, 210, 0.05);
   border-radius: 12px;
   padding: 2rem;
-  border: 2px solid rgba(78, 197, 212, 0.3);
+  border: 2px solid rgba(42, 161, 152, 0.3);
 }
 
 .caption {
   text-align: center;
   margin-top: 2rem;
   font-size: 1.2em;
-  color: #4EC5D4;
+  color: #2aa198;
   font-style: italic;
 }
 </style>
@@ -2468,21 +2327,10 @@ h1 {
 
 <style>
 h1 {
-  background: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%, #4EC5D4 30%);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shine 2s linear infinite;
+  color: #2B90B6;
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 2rem;
-}
-
-@keyframes shine {
-  to {
-    background-position: 200% center;
-  }
 }
 
 .image-container {
@@ -2498,7 +2346,7 @@ h1 {
   max-height: 100%;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(88, 110, 117, 0.1);
 }
 </style>
 
