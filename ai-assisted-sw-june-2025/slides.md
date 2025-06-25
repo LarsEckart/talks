@@ -370,23 +370,14 @@ h1 {
 </style>
 
 ---
-transition: fade-out
+layout: center
+class: text-center
 ---
 
-# Pair AI Journey
+# Hitting a Moving Target
 
-<div class="image-transition-container">
-  <div class="image-item first" v-click="1" :class="{ 'active': $slidev.nav.clicks === 1, 'background': $slidev.nav.clicks >= 2 }">
-    <img src="/pictures/pairai.png" alt="Pair AI" />
-  </div>
-  
-  <div class="image-item second" v-click="2" :class="{ 'active': $slidev.nav.clicks === 2, 'background': $slidev.nav.clicks >= 3 }">
-    <img src="/pictures/pairaianger.png" alt="Pair AI Anger" />
-  </div>
-  
-  <div class="image-item third" v-click="3" :class="{ 'active': $slidev.nav.clicks === 3 }">
-    <img src="/pictures/pairaiidea.png" alt="Pair AI Idea" />
-  </div>
+<div class="centered-image">
+  <img src="/pictures/moving-target.png" alt="Moving Target" />
 </div>
 
 <style>
@@ -395,67 +386,22 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.image-transition-container {
-  position: relative;
+.centered-image {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-  margin: 3rem auto;
-  padding: 2rem;
+  margin: 2rem auto;
 }
 
-.image-item {
-  position: absolute;
-  opacity: 0;
-  transform: scale(0);
-  transition: all 1s ease-in-out;
-  z-index: 1;
-}
-
-.image-item.active {
-  opacity: 1;
-  transform: scale(1);
-  z-index: 10;
-}
-
-.image-item.background {
-  opacity: 0.3;
-  transform: scale(0.4);
-  z-index: 1;
-}
-
-.image-item.background.first {
-  transform: scale(0.3) translateX(-300px) translateY(-150px);
-}
-
-.image-item.background.second {
-  transform: scale(0.3) translateX(-150px) translateY(-150px);
-}
-
-.image-item img {
-  max-height: 450px;
-  max-width: 600px;
+.centered-image img {
+  max-height: 100%;
+  max-width: 100%;
   object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 12px 40px rgba(88, 110, 117, 0.4);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(42, 161, 152, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
 }
-
 </style>
-
-<!--
-Speaker Notes:
-
-The Pair AI Journey - A Story of Evolution
-
-**First Image**: When developers first start pair programming with AI agents, there's this incredible excitement and amazement. You see what these tools can do - they understand your code, they suggest solutions, they can write entire functions. It feels like magic. Both developer and AI are working together harmoniously, and you think "This is the future!"
-
-**Second Image**: But then reality hits. Things start going wrong. The AI makes mistakes, suggests buggy code, doesn't understand your specific context or constraints. It keeps suggesting the same wrong approach over and over. You spend more time correcting the AI than writing code yourself. Frustration builds. The AI that seemed so promising now feels like it's fighting against you rather than helping.
-
-**Third Image**: And here we are at the turning point. This is where the community splits. Some people throw up their hands and say "See? I told you so. This AI stuff is crap. It doesn't work. It's definitely not taking my job." But others - the ones with the lightbulb moment - they start thinking differently. They ask: "How can we improve this interaction? How can we give the AI more help? How can we design better workflows?" These are the people who understand that the problem isn't the technology itself, but how we're using it. They're the ones who will figure out how to make AI pair programming truly effective.
--->
 
 ---
 transition: fade-out
@@ -557,7 +503,7 @@ class: text-center
 <style>
 h1 {
   color: #2B90B6;
-  margin-bottom: 2rem;
+  margin: 3rem 0 2rem 0;
 }
 
 .depends-content {
@@ -611,7 +557,7 @@ class: text-center
 <style>
 h1 {
   color: #2B90B6;
-  margin-bottom: 2rem;
+  margin: 3rem 0 2rem 0;
 }
 
 .depends-content {
@@ -645,14 +591,23 @@ h1 {
 </style>
 
 ---
-layout: center
-class: text-center
+transition: fade-out
 ---
 
-# Hitting a Moving Target
+# Pair AI Journey
 
-<div class="centered-image">
-  <img src="/pictures/moving-target.png" alt="Moving Target" />
+<div class="image-transition-container">
+  <div class="image-item first" v-click="1" :class="{ 'active': $slidev.nav.clicks === 1, 'background': $slidev.nav.clicks >= 2 }">
+    <img src="/pictures/pairai.png" alt="Pair AI" />
+  </div>
+  
+  <div class="image-item second" v-click="2" :class="{ 'active': $slidev.nav.clicks === 2, 'background': $slidev.nav.clicks >= 3 }">
+    <img src="/pictures/pairaianger.png" alt="Pair AI Anger" />
+  </div>
+  
+  <div class="image-item third" v-click="3" :class="{ 'active': $slidev.nav.clicks === 3 }">
+    <img src="/pictures/pairaiidea.png" alt="Pair AI Idea" />
+  </div>
 </div>
 
 <style>
@@ -661,22 +616,67 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.centered-image {
+.image-transition-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
-  margin: 2rem auto;
+  margin: 3rem auto;
+  padding: 2rem;
 }
 
-.centered-image img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
+.image-item {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+  z-index: 1;
 }
+
+.image-item.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+}
+
+.image-item.background {
+  opacity: 0.3;
+  transform: scale(0.4);
+  z-index: 1;
+}
+
+.image-item.background.first {
+  transform: scale(0.3) translateX(-300px) translateY(-150px);
+}
+
+.image-item.background.second {
+  transform: scale(0.3) translateX(-150px) translateY(-150px);
+}
+
+.image-item img {
+  max-height: 450px;
+  max-width: 600px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(88, 110, 117, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(42, 161, 152, 0.3);
+}
+
 </style>
+
+<!--
+Speaker Notes:
+
+The Pair AI Journey - A Story of Evolution
+
+**First Image**: When developers first start pair programming with AI agents, there's this incredible excitement and amazement. You see what these tools can do - they understand your code, they suggest solutions, they can write entire functions. It feels like magic. Both developer and AI are working together harmoniously, and you think "This is the future!"
+
+**Second Image**: But then reality hits. Things start going wrong. The AI makes mistakes, suggests buggy code, doesn't understand your specific context or constraints. It keeps suggesting the same wrong approach over and over. You spend more time correcting the AI than writing code yourself. Frustration builds. The AI that seemed so promising now feels like it's fighting against you rather than helping.
+
+**Third Image**: And here we are at the turning point. This is where the community splits. Some people throw up their hands and say "See? I told you so. This AI stuff is crap. It doesn't work. It's definitely not taking my job." But others - the ones with the lightbulb moment - they start thinking differently. They ask: "How can we improve this interaction? How can we give the AI more help? How can we design better workflows?" These are the people who understand that the problem isn't the technology itself, but how we're using it. They're the ones who will figure out how to make AI pair programming truly effective.
+-->
 
 ---
 layout: center
@@ -1363,67 +1363,6 @@ h1 {
 
 ---
 
-# Kent Beck Skills
-
-<div class="centered-image">
-  <img src="/pictures/kent-beck-skills.png" alt="Kent Beck Skills" />
-</div>
-
-<style>
-h1 {
-  color: #2B90B6;
-}
-
-.centered-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  margin: 2rem auto;
-}
-
-.centered-image img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
-}
-</style>
-
----
-
-# Vibe Coding
-
-<div class="tweet-slide">
-  <img src="/pictures/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
-</div>
-
-<style>
-h1 {
-  color: #2B90B6;
-}
-
-.tweet-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 100%;
-  padding: 2rem;
-}
-
-.tweet-slide img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
-}
-</style>
-
----
-
 # Formatting Output
 
 <div class="formatting-content">
@@ -1468,26 +1407,26 @@ h1 {
 
 .output-category {
   padding: 1.5rem;
-  background: rgba(38, 139, 210, 0.8);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #2aa198;
+  border-left: 4px solid #2B90B6;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border: 1px solid rgba(42, 161, 152, 0.4);
-  box-shadow: 0 4px 20px rgba(88, 110, 117, 0.2);
+  border: 1px solid rgba(43, 144, 182, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .output-category:hover {
-  background: rgba(38, 139, 210, 0.9);
+  background: rgba(38, 139, 210, 0.25);
   transform: translateY(-2px);
 }
 
 .output-category h3 {
-  color: #2aa198;
+  color: #2B90B6;
   font-size: 1.3em;
   margin: 0 0 1rem 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
+  text-shadow: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1498,10 +1437,10 @@ h1 {
 }
 
 .example-text {
-  color: #657b83;
+  color: #93a1a1;
   font-size: 0.95em;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(88, 110, 117, 0.3);
+  text-shadow: none;
   font-style: italic;
 }
 </style>
@@ -1552,26 +1491,26 @@ h1 {
 
 .output-category {
   padding: 1.5rem;
-  background: rgba(38, 139, 210, 0.8);
+  background: rgba(38, 139, 210, 0.15);
   border-radius: 12px;
-  border-left: 4px solid #2aa198;
+  border-left: 4px solid #2B90B6;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border: 1px solid rgba(42, 161, 152, 0.4);
-  box-shadow: 0 4px 20px rgba(88, 110, 117, 0.2);
+  border: 1px solid rgba(43, 144, 182, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .output-category:hover {
-  background: rgba(38, 139, 210, 0.9);
+  background: rgba(38, 139, 210, 0.25);
   transform: translateY(-2px);
 }
 
 .output-category h3 {
-  color: #2aa198;
+  color: #2B90B6;
   font-size: 1.3em;
   margin: 0 0 1rem 0;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
+  text-shadow: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1582,90 +1521,11 @@ h1 {
 }
 
 .example-text {
-  color: #657b83;
+  color: #93a1a1;
   font-size: 0.95em;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(88, 110, 117, 0.3);
+  text-shadow: none;
   font-style: italic;
-}
-</style>
-
----
-
-# How to trigger Chain of Thought (2/2)
-
-<div class="content-container">
-  <div class="content-item" v-click>
-    <h4>Follow these steps to find an answer:</h4>
-    <ul>
-      <li v-click>Define what "fewer bugs in production" means in measurable terms</li>
-      <li v-click>Identify typical sources of bugs in OOP and in FP</li>
-      <li v-click>Consider how each paradigm mitigates or amplifies those sources</li>
-      <li v-click>Compare the outcomes and arrive at a reasoned conclusion</li>
-    </ul>
-  </div>
-</div>
-
-<style>
-h1 {
-  color: #2B90B6;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 2.2em;
-}
-
-.content-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
-.question-section {
-  margin: 1.5rem 0;
-  padding: 1.5rem;
-  background: rgba(42, 161, 152, 0.15);
-  border-radius: 12px;
-  border-left: 4px solid #2aa198;
-  backdrop-filter: blur(10px);
-  text-align: center;
-}
-
-.question-section h3 {
-  color: #2aa198;
-  font-size: 1.5em;
-  margin: 0;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.content-item {
-  margin: 1.5rem 0;
-  padding: 1.5rem;
-  background: rgba(38, 139, 210, 0.15);
-  border-radius: 12px;
-  border-left: 4px solid #2aa198;
-  backdrop-filter: blur(10px);
-}
-
-.content-item h4 {
-  color: #2aa198;
-  font-size: 1.3em;
-  margin: 0;
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-.content-item ul {
-  margin: 1rem 0 0 0;
-  padding-left: 1.5rem;
-}
-
-.content-item li {
-  color: #657b83;
-  font-size: 1.1em;
-  margin: 0.8rem 0;
-  line-height: 1.4;
-  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
 }
 </style>
 
@@ -1822,6 +1682,85 @@ h1 {
 
 ---
 
+# How to trigger Chain of Thought (2/2)
+
+<div class="content-container">
+  <div class="content-item" v-click>
+    <h4>Follow these steps to find an answer:</h4>
+    <ul>
+      <li v-click>Define what "fewer bugs in production" means in measurable terms</li>
+      <li v-click>Identify typical sources of bugs in OOP and in FP</li>
+      <li v-click>Consider how each paradigm mitigates or amplifies those sources</li>
+      <li v-click>Compare the outcomes and arrive at a reasoned conclusion</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.question-section {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(42, 161, 152, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #2aa198;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.question-section h3 {
+  color: #2aa198;
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: rgba(38, 139, 210, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #2aa198;
+  backdrop-filter: blur(10px);
+}
+
+.content-item h4 {
+  color: #2aa198;
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content-item ul {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.content-item li {
+  color: #657b83;
+  font-size: 1.1em;
+  margin: 0.8rem 0;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
+}
+</style>
+
+---
+
 # Think first! / Ordering Effects
 
 <div class="ordering-content">
@@ -1882,87 +1821,6 @@ h1 {
   line-height: 1.4;
   margin: 0;
   text-shadow: 0 2px 4px rgba(88, 110, 117, 0.3);
-}
-</style>
-
----
-
-# Prompting reasoning models
-
-<div class="reasoning-content">
-  
-  <div class="model-section" v-click>
-    <h3>Reasoning models</h3>
-    <ul class="model-points">
-      <li>trained to think longer and harder about complex tasks</li>
-      <li>execute tasks with high accuracy and precision</li>
-      <li>like a senior co-worker. You can give them a goal to achieve and trust them to work out the details.</li>
-    </ul>
-  </div>
-
-  <div class="model-section" v-click>
-    <h3>GPT models</h3>
-    <ul class="model-points">
-      <li>lower-latency, more cost-efficient</li>
-      <li>The workhorses</li>
-      <li>like a junior coworker. They'll perform best with explicit instructions to create a specific output.</li>
-    </ul>
-  </div>
-
-</div>
-
-<style>
-h1 {
-  color: #2B90B6;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 2em;
-}
-
-.reasoning-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.model-section {
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background: rgba(38, 139, 210, 0.15);
-  border-radius: 12px;
-  border-left: 4px solid #2aa198;
-  backdrop-filter: blur(10px);
-}
-
-.model-section h3 {
-  color: #2aa198;
-  font-size: 1.4em;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.model-points {
-  margin: 0;
-  padding-left: 1.5rem;
-  list-style: none;
-}
-
-.model-points li {
-  color: #657b83;
-  font-size: 1em;
-  line-height: 1.4;
-  margin: 0.8rem 0;
-  position: relative;
-}
-
-.model-points li::before {
-  content: "•";
-  color: #2aa198;
-  font-size: 1.2em;
-  font-weight: bold;
-  position: absolute;
-  left: -1.2rem;
-  top: 0;
 }
 </style>
 
@@ -2153,6 +2011,87 @@ h1 {
 
 .example strong {
   color: #2aa198;
+}
+</style>
+
+---
+
+# Prompting reasoning models
+
+<div class="reasoning-content">
+  
+  <div class="model-section" v-click>
+    <h3>Reasoning models</h3>
+    <ul class="model-points">
+      <li>trained to think longer and harder about complex tasks</li>
+      <li>execute tasks with high accuracy and precision</li>
+      <li>like a senior co-worker. You can give them a goal to achieve and trust them to work out the details.</li>
+    </ul>
+  </div>
+
+  <div class="model-section" v-click>
+    <h3>GPT models</h3>
+    <ul class="model-points">
+      <li>lower-latency, more cost-efficient</li>
+      <li>The workhorses</li>
+      <li>like a junior coworker. They'll perform best with explicit instructions to create a specific output.</li>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2em;
+}
+
+.reasoning-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.model-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(38, 139, 210, 0.15);
+  border-radius: 12px;
+  border-left: 4px solid #2aa198;
+  backdrop-filter: blur(10px);
+}
+
+.model-section h3 {
+  color: #2aa198;
+  font-size: 1.4em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.model-points {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.model-points li {
+  color: #657b83;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0.8rem 0;
+  position: relative;
+}
+
+.model-points li::before {
+  content: "•";
+  color: #2aa198;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: absolute;
+  left: -1.2rem;
+  top: 0;
 }
 </style>
 
@@ -2350,3 +2289,63 @@ h1 {
 }
 </style>
 
+---
+
+# Kent Beck Skills
+
+<div class="centered-image">
+  <img src="/pictures/kent-beck-skills.png" alt="Kent Beck Skills" />
+</div>
+
+<style>
+h1 {
+  color: #2B90B6;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin: 2rem auto;
+}
+
+.centered-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
+}
+</style>
+
+---
+
+# Vibe Coding
+
+<div class="tweet-slide">
+  <img src="/pictures/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
+</div>
+
+<style>
+h1 {
+  color: #2B90B6;
+}
+
+.tweet-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.tweet-slide img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
+}
+</style>
