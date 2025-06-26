@@ -23,10 +23,12 @@ Presentation navigation:
 ## Architecture
 
 **Slidev Framework Structure:**
-- `slides.md` - Main presentation content in Markdown with frontmatter configuration
+- `slides.md` - Main presentation configuration with frontmatter and slide imports
+- `slides/` - Individual slide files (e.g., `01-title.md`, `02-content.md`) imported via `src:` directive
 - `pages/` - Additional slide pages (imported via `src:` directive)
 - `components/` - Vue components usable in slides (e.g., Counter.vue)
 - `snippets/` - External code snippets referenced in slides
+- `pictures/` - Image assets referenced with `/pictures/filename.jpg` paths
 - Theme: Uses 'seriph' theme with customizable layouts and styling
 
 **Key Features:**
@@ -39,8 +41,9 @@ Presentation navigation:
 
 **Slide Configuration:**
 - Frontmatter in slides.md controls theme, transitions, and metadata
-- Individual slides can have their own frontmatter for layout and styling
-- External slides imported via `src:` directive in slide frontmatter
+- Individual slides in `slides/` directory have their own frontmatter for layout and styling
+- External slides imported via `src: ./slides/filename.md` directive in slide frontmatter
+- **CRITICAL**: Each slide must be in its own file in the `slides/` directory - do NOT create inline slides in `slides.md`
 
 ## Custom Timeline Component
 
@@ -85,7 +88,7 @@ Always use Playwright to:
 The development server runs at `http://localhost:3030` and Playwright can access slides directly via URL patterns like `/4` for slide 4, with click states via `?clicks=N` parameters.
 
 **MANDATORY Verification Process:**
-1. Make changes to slides.md
+1. Make changes to slide files in `slides/` directory (or add new slide imports to `slides.md`)
 2. **IMMEDIATELY verify with Playwright** - navigate to the slide
 3. Test each click/interaction step by step
 4. Take screenshots at each state  
@@ -220,3 +223,37 @@ V-click animations in Slidev may not always work as expected with complex nested
 - V-click should enhance, not be essential for, slide comprehension
 - Always verify slide works well even if all content shows immediately
 - Prioritize clear structure and readable content
+
+## Slide Creation Workflow
+
+**IMPORTANT: Proper Slide Structure**
+This presentation uses a modular slide architecture where each slide is a separate file in the `slides/` directory.
+
+**Creating New Slides:**
+1. **Create slide file**: Always create new slides as separate `.md` files in `slides/` directory
+2. **Naming convention**: Use numeric prefixes for ordering (e.g., `00-ai-timeline.md`, `01-title.md`)
+3. **Import in slides.md**: Add slide reference using `src: ./slides/filename.md` format
+4. **Never inline**: Do NOT create slide content directly in `slides.md` - this breaks the modular structure
+
+**Example Slide Import in slides.md:**
+```markdown
+---
+src: ./slides/00-ai-timeline.md
+---
+
+---
+src: ./slides/01-title.md
+---
+```
+
+**Common Mistakes to Avoid:**
+- ❌ Creating inline slide content in `slides.md` between `---` separators
+- ❌ Missing frontmatter `---` delimiters in slide files
+- ❌ Incorrect image paths (use `/pictures/filename.jpg` not `./pictures/`)
+- ❌ Forgetting to verify slide rendering with Playwright
+
+**Image Asset Usage:**
+- Store images in `pictures/` directory in project root
+- Reference with absolute paths: `/pictures/filename.jpg`
+- Common image formats: `.jpg`, `.png` supported
+- Always include meaningful `alt` attributes for accessibility
