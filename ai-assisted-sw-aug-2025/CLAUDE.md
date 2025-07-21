@@ -4,6 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Read SLIDEV_STYLING_GUIDE.md for copy-paste patterns that maintain consistency while working within Slidev's architecture.
 
+Ensure each slide in `slides` folder starts with
+
+```
+---
+layout: center
+class: text-center
+---
+```
+
 ## Project Overview
 
 This is a Slidev presentation project - a modern slide deck framework for developers that uses Markdown to create presentations. The project contains a presentation about AI assisted software development history and timeline.

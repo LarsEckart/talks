@@ -1,6 +1,7 @@
 ---
 layout: image-right
 image: '/timeline.jpg'
+class: text-left
 ---
 
 # AI Timeline

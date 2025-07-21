@@ -1,6 +1,12 @@
-# AI assisted Software Development
+---
+layout: intro
+---
 
+# Software Development with AI
+
+<div class="absolute bottom-8 right-8 text-sm text-gray-600">
 Lars Eckart, August 2025
+</div>
 
 <style>
 h1 {
