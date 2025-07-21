@@ -1,10 +1,21 @@
 ---
-layout: center
+layout: image-right
+image: '/timeline.jpg'
 ---
 
-<h1 class="slide-title">AI Timeline</h1>
+# AI Timeline
 
-<img src="/pictures/timeline.jpg" alt="AI Development Timeline" style="max-width: 90%; max-height: 80vh; object-fit: contain;" />
+- GitHub Copilot
+- ~~Windsurf~~
+- Cursor
+- Cline
+- Roo Code
+- OpenHands
+- **Claude Code**
+- **Amp**
+- Warp
+- Kiro
+- many many more
 
 <style>
 .slide-title {

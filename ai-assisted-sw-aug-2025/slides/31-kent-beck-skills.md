@@ -3,7 +3,7 @@
 <h1 class="slide-title">Kent Beck Skills</h1>
 
 <div class="slide-image-center">
-  <img src="/pictures/kent-beck-skills.png" alt="Kent Beck Skills" />
+  <img src="/kent-beck-skills.png" alt="Kent Beck Skills" />
 </div>
 
 <style>

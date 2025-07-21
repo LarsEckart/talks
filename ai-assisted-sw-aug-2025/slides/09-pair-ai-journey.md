@@ -6,15 +6,15 @@ transition: fade-out
 
 <div class="image-transition-container">
   <div class="image-item first" v-click="1" :class="{ 'active': $slidev.nav.clicks === 1, 'background': $slidev.nav.clicks >= 2 }">
-    <img src="/pictures/pairai.png" alt="Pair AI" />
+    <img src="/pairai.png" alt="Pair AI" />
   </div>
 
   <div class="image-item second" v-click="2" :class="{ 'active': $slidev.nav.clicks === 2, 'background': $slidev.nav.clicks >= 3 }">
-    <img src="/pictures/pairaianger.png" alt="Pair AI Anger" />
+    <img src="/pairaianger.png" alt="Pair AI Anger" />
   </div>
 
   <div class="image-item third" v-click="3" :class="{ 'active': $slidev.nav.clicks === 3 }">
-    <img src="/pictures/pairaiidea.png" alt="Pair AI Idea" />
+    <img src="/pairaiidea.png" alt="Pair AI Idea" />
   </div>
 </div>
 

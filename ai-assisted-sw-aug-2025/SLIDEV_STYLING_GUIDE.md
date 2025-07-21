@@ -268,7 +268,7 @@ h1 {
 <h1>Visual Content</h1>
 
 <div class="slide-image-center">
-  <img src="/pictures/image.png" alt="Description" />
+  <img src="/image.png" alt="Description" />
 </div>
 
 <style>

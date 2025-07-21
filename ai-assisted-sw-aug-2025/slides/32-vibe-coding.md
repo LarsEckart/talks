@@ -3,7 +3,7 @@
 <h1 class="slide-title">Vibe Coding</h1>
 
 <div class="slide-image-center-large">
-  <img src="/pictures/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
+  <img src="/karpathy-tweet-cropped.png" alt="Andrej Karpathy Tweet about Vibe Coding" />
 </div>
 
 <style>

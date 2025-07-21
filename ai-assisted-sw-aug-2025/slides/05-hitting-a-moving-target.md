@@ -6,7 +6,7 @@ class: text-center
 <h1 class="slide-title">Hitting a Moving Target</h1>
 
 <div class="slide-image-center">
-  <img src="/pictures/moving-target.png" alt="Moving Target" />
+  <img src="/moving-target.png" alt="Moving Target" />
 </div>
 
 <style>
