@@ -1,6 +1,3 @@
----
-transition: fade-out
----
 
 <h1 class="slide-title">Pair AI Journey</h1>
 

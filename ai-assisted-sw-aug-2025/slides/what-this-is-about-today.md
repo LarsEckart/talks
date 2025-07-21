@@ -1,6 +1,3 @@
----
-transition: fade-out
----
 
 <h1 class="slide-title-gradient">What this is about today</h1>
 

@@ -1,5 +1,4 @@
 ---
-transition: fade-out
 level: 2
 layout: center
 class: text-center
