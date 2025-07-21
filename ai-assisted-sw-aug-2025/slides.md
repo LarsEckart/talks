@@ -26,45 +26,45 @@ mdc: true
 ---
 
 ---
-src: ./slides/00-ai-timeline.md
+src: ./slides/ai-timeline.md
 ---
 
 ---
-src: ./slides/01-title.md
+src: ./slides/title.md
 ---
 
 ---
-src: ./slides/02-what-this-is-about-today.md
+src: ./slides/what-this-is-about-today.md
 ---
 
 ---
-src: ./slides/05-hitting-a-moving-target.md
+src: ./slides/hitting-a-moving-target.md
 ---
 
 ---
-src: ./slides/06-disclaimer.md
+src: ./slides/disclaimer.md
 ---
 
 ---
-src: ./slides/07-2nd-disclaimer-it-depends.md
+src: ./slides/2nd-disclaimer-it-depends.md
 ---
 
 ---
-src: ./slides/08-2nd-disclaimer-it-depends-2.md
+src: ./slides/2nd-disclaimer-it-depends-2.md
 ---
 
 ---
-src: ./slides/09-pair-ai-journey.md
+src: ./slides/pair-ai-journey.md
 ---
 
 ---
-src: ./slides/31-kent-beck-skills.md
+src: ./slides/kent-beck-skills.md
 ---
 
 ---
-src: ./slides/32-vibe-coding.md
+src: ./slides/vibe-coding.md
 ---
 
 ---
-src: ./slides/33-lets-build-an-ai-agent.md
+src: ./slides/lets-build-an-ai-agent.md
 ---
