@@ -15,5 +15,5 @@ h1 {
 </style>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+I really struggle finding good title for these kinds of presentations. Right now it's software development with AI, but another title might also be Agent Coding, as you will see later from what I tell you.
 -->

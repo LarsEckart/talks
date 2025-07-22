@@ -46,17 +46,16 @@ your-slidev/
 Key directories:
 - `slides.md` - Main presentation configuration with frontmatter and slide imports
 - `slides/` - Individual slide files (e.g., `01-title.md`, `02-content.md`) imported via `src:` directive
-- `pages/` - Additional slide pages (imported via `src:` directive)
-- `components/` - Vue components usable in slides (e.g., Counter.vue)
 - `snippets/` - External code snippets referenced in slides
 - `public/` - Static assets including images referenced with `/filename.jpg` paths
-- Theme: Uses 'seriph' theme with customizable layouts and styling
 
 **Built-in Layouts Summary:**
-Basic layouts: `default`, `center`, `none`. Structure layouts: `cover`, `intro`, `section`, `end`. Content emphasis: `fact`, `quote`, `statement`. Media layouts: `image`, `image-left/right`, `iframe`, `iframe-left/right`. Columns: `two-cols`, `two-cols-header`. Each layout serves specific presentation purposes.
-
-*
-
+Basic layouts: `default`, `center`, `none`.
+Structure layouts: `cover`, `intro`, `section`, `end`.
+Content emphasis: `fact`, `quote`, `statement`.
+Media layouts: `image`, `image-left/right`, `iframe`, `iframe-left/right`. Columns: `two-cols`, `two-cols-header`.
+Each layout serves specific presentation purposes.
+s
 ## Development Workflow
 
 **Verification with Playwright (MANDATORY):**
@@ -71,3 +70,7 @@ Always use Playwright to:
 - **Catch Vue parsing errors and missing tags that break slides**
 
 The development server runs at `http://localhost:3030` and Playwright can access slides directly via URL patterns like `/4` for slide 4, with click states via `?clicks=N` parameters.
+
+## Slide Presentation Guidelines
+
+- All slides should include speaker notes at the end, the syntax for it is <!-- speaker notes. -->

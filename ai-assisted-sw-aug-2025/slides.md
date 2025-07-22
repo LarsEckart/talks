@@ -13,3 +13,43 @@ src: ./slides/title.md
 ---
 src: ./slides/ai-timeline.md
 ---
+
+---
+src: ./slides/heuristic-01-stop-bot.md
+---
+
+---
+src: ./slides/heuristic-02-find-issue.md
+---
+
+---
+src: ./slides/heuristic-03-thinking-modes.md
+---
+
+---
+src: ./slides/heuristic-04-ask-questions.md
+---
+
+---
+src: ./slides/heuristic-05-claude-student.md
+---
+
+---
+src: ./slides/heuristic-06-working-maintainable.md
+---
+
+---
+src: ./slides/heuristic-07-commit-before.md
+---
+
+---
+src: ./slides/heuristic-08-experience-failure.md
+---
+
+---
+src: ./slides/heuristic-09-simpler-way.md
+---
+
+---
+src: ./slides/heuristic-10-task-list.md
+---
