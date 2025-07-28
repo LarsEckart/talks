@@ -42,22 +42,17 @@ sequenceDiagram
 </div>
 
 <!--
-## Model differences
-Claude 4 Sonnet was specifically trained to use tools and follow instructions effectively. This makes it particularly well-suited for agentic workflows where precise tool usage is critical.
+The "agentic" coding tools we have right now work like this:
 
-ChatGPT 4.1 struggles more with consistent tool behavior - it sometimes has difficulty maintaining the same level of precision when executing tool calls and following complex multi-step instructions.
+A skilled individual with both deep domain understanding and deep understanding of the capabilities of the agent (including understanding what tools are available to that agent) poses a clear task to it.
 
-## The challenge of tool abstraction
-The core challenge: How does the agent know if an operation partially succeeded? How do you communicate complex state changes without burning through your context window?
+The agent writes some code relating to that task. It runs a tool to execute and test that code. It inspects the result, and if there are errors it edits the code and tries again.
 
-Example: A gradle build command might return 10,000 lines of output, but the agent only needs to know "build failed at test X with assertion Y."
+It may call other tools as well, for example a search tool to find related code or even to look up API documentation elsewhere (including via web search).
 
-## Design considerations
-Designing these tool abstractions is an art form:
-- When a tool fails, what information does the agent need to recover?
-- Too little information and it's stuck
-- Too much and you waste precious context
-- The sweet spot: just enough context to make intelligent decisions
+It continues like this until it hits a loosely defined "done" state or gets stuck.
 
-MCP (Model Context Protocol) helps standardize these interactions, but the abstraction layer design remains crucial for effective agent performance.
+The skilled individual then reviews what it has done and almost always finds that it has not solved the problem to their satisfaction... so they apply their expertise and domain understanding to prompt it again to try and get to that desired state.
+
+Without the skilled individual, the "agent" is useless. It may as well not exist.
 -->
