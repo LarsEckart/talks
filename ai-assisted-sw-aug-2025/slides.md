@@ -11,7 +11,23 @@ src: ./slides/title.md
 ---
 
 ---
+src: ./slides/learning-curve-dip.md
+---
+
+---
+src: ./slides/ai-journey.md
+---
+
+---
 src: ./slides/ai-timeline.md
+---
+
+---
+src: ./slides/not-vibing.md
+---
+
+---
+src: ./slides/conversational-agents.md
 ---
 
 ---

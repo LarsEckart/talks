@@ -9,14 +9,11 @@ class: text-left
 - GitHub Copilot
 - ~~Windsurf~~
 - Cursor
-- Cline
-- Roo Code
-- OpenHands
 - **Claude Code**
 - **Amp**
 - Warp
 - Kiro
-- many many more
+- The gap between "works in demo" and "works at scale" is enormous, and most of the industry is still figuring this out.
 
 <style>
 .slide-title {

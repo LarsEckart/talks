@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3
+image: https://images.unsplash.com/photo-1544724107-6d5c4caaff30-WPrTKRw8KRQ?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3
 ---
 
 # Stop the bot when it starts to wander and get lost

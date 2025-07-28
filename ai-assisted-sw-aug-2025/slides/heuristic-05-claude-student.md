@@ -13,14 +13,13 @@ image: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=f
 
 <v-click>
 
-- Educate Claude on maintainable software practices
 - Store learnings in .md files for future sessions
 
 </v-click>
 
 <v-click>
 
-**Claude conforms to your style, but needs guidance**
+**Retaining state is on you!**
 
 </v-click>
 
