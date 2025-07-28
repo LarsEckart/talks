@@ -31,6 +31,18 @@ src: ./slides/conversational-agents.md
 ---
 
 ---
+src: ./slides/guiding-ai-behaviour.md
+---
+
+---
+src: ./slides/exercise-tests-for-gilded-rose.md
+---
+
+---
+src: ./slides/accountability-ownership.md
+---
+
+---
 src: ./slides/heuristic-01-stop-bot.md
 ---
 
