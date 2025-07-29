@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3
+image: /ask-questions-neon.jpg
 ---
 
 # Ask me questions
@@ -14,9 +14,10 @@ image: https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&auto=f
 <v-click>
 
 Benefits:
-- Provide missing information Claude needs
+- Provide missing information the agents need
 - Explore different solution approaches
-- Gauge whether Claude understands the task
+- Gauge whether the agent understands the task
+- "Ask me one question at a time"
 
 </v-click>
 
@@ -32,7 +33,7 @@ Benefits:
 
 </v-click>
 
-<!-- 
+<!--
 This heuristic is about creating dialogue and ensuring alignment before starting work. The phrasing "ask me any clarifying questions if needed" is important - it gives Claude permission to seek clarity rather than making assumptions.
 
 However, you need to be judicious about which questions to answer. Claude might ask about things it could easily discover through its tools. Focus on answering questions that provide context, constraints, or preferences that Claude couldn't determine on its own.

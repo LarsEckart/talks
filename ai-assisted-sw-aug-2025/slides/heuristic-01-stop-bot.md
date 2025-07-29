@@ -1,13 +1,13 @@
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1544724107-6d5c4caaff30-WPrTKRw8KRQ?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3
+image: /stop.jpg
 ---
 
 # Stop the bot when it starts to wander and get lost
 
 <v-click>
 
-**Treat Claude like your pair programming partner**
+**Treat it like your pair programming partner**
 
 </v-click>
 

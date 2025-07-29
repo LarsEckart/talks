@@ -17,7 +17,7 @@ Benefits:
 - Reduces cognitive load
 - Focus on one thing at a time
 - Reduces risk of forgetting important tasks
-- Creates shared context with Claude
+- Creates shared context with the agent
 
 </v-click>
 

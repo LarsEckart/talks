@@ -3,7 +3,7 @@ layout: image-right
 image: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3
 ---
 
-# Claude the student
+# The student
 
 <v-click>
 

@@ -13,8 +13,8 @@ image: https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&auto=form
 
 <v-click>
 
-- Challenge Claude to simplify its approach
-- Usually the answer is "yes"
+- Challenge the agent to simplify its approach
+- Usually the answer is "yes" or "You're absolutely right!"
 - Works even when you don't see the simpler way
 - Forces reconsideration of complexity
 
@@ -26,7 +26,7 @@ image: https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&auto=form
 
 </v-click>
 
-<!-- 
+<!--
 This heuristic leverages one of programming's fundamental principles: simplicity is better than complexity. Claude, like many developers, can sometimes overcomplicate solutions.
 
 The magic of this question is that it works even when you don't know the answer. You don't need to see the simpler approach yourself - just asking the question often triggers Claude to find one.

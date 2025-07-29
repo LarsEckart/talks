@@ -7,7 +7,7 @@ image: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&auto=form
 
 <v-click>
 
-**Working with Claude requires version control discipline**
+**Working with agents requires version control discipline**
 
 </v-click>
 
@@ -16,7 +16,7 @@ image: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=600&auto=form
 Workflow:
 1. Prompt until the code works
 2. **Commit**
-3. Refactor with Claude or yourself  
+3. Refactor with the agent or yourself
 4. **Commit**
 5. Push remotely
 
@@ -24,11 +24,11 @@ Workflow:
 
 <v-click>
 
-**You never know what crazy ideas Claude will suggest**
+**Committing is cheap**
 
 </v-click>
 
-<!-- 
+<!--
 This heuristic is about risk management when working with AI. Since you can't predict exactly what changes Claude will make, having clean commit points allows you to easily revert if things go wrong.
 
 Frequent commits become even more important with AI assistance because the changes can be more extensive and unpredictable than typical human changes. It's your safety net for experimentation and bold moves.

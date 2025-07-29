@@ -7,16 +7,14 @@ image: https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=600&auto=form
 
 <v-click>
 
-**Use strategically - costs more but worth it**
+**with Claude models**
 
 </v-click>
 
 <v-click>
 
 When to trigger thinking modes:
-- After Claude fails a task and seems confused
 - On complex initial prompts requiring deep analysis
-- Before embarking on complex tasks for planning
 
 </v-click>
 

@@ -3,7 +3,7 @@ layout: image-right
 image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3
 ---
 
-# Make Claude experience the failure
+# Make the agents experience the failure
 
 <v-click>
 
@@ -13,16 +13,16 @@ image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=f
 
 <v-click>
 
-- Have Claude run the app/tests itself
+- Have it run the app/tests itself
 - Let it see the failures firsthand
 - Creates a feedback loop: try → see result → adjust
-- Claude "learns" from direct experience
+- The agents "learn" from direct experience
 
 </v-click>
 
 <v-click>
 
-**Direct experience > secondhand descriptions**
+**Direct experience > secondhand descriptions (but both work)**
 
 </v-click>
 
