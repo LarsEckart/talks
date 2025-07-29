@@ -11,9 +11,9 @@ Write tests for the Gilded Rose kata.
 
 Then iterate on it until they are "right".
 
-Create `github-instructions.md` file
+Then create `github-instructions.md` file
 
-Delete tests
+Then delete tests
 
 Write tests for the Gilded Rose kata.
 
