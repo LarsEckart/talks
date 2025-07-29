@@ -1,12 +1,25 @@
-TODO
+---
+layout: default
+---
+
+# The Incremental AI Workflow
+
+## Start with Planning, Not Code
+- Describe the single next concrete change
+- Ask for approaches, not implementations
+- Choose the most promising path
+- Ask again for steps to implement it in small increments
+
+## Embrace Exploration
+- Not working? Wind back and try a different approach
+- AI makes reverting and exploring alternatives cheap
 
 
-Describe the single next concrete incremental change
-don't ask for code, ask for approaches
-pick one, draft steps to get there
-review / learn from it
-widn back, try different one
-test
-commit
-ask for suggestions on what to do next
-repeat
+<!--
+Speaker notes:
+- Resist the urge to ask for complete code solutions
+- Planning first prevents wasted effort
+- Small incremental changes are easier to debug
+- AI excels at suggesting next steps based on context
+- Reverting and trying alternatives is part of the process
+-->
