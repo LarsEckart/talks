@@ -109,3 +109,7 @@ src: ./slides/meta-prompting.md
 ---
 src: ./slides/workflow.md
 ---
+
+---
+src: ./slides/exercise-how-to-build-an-agent.md
+---
