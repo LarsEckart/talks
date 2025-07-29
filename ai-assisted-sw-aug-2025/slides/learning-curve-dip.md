@@ -15,7 +15,9 @@ When adopting AI tools, expect a temporary performance dip
 
 Key: Push through the dip to reach higher productivity
 
-<!-- 
+<!--
+AI tools are tricky to use. Hold it wrong, and you can generate underwhelming results, worse still, slow down your velocity by drowning your project in slop and technical debt.
+
 The J-curve or learning dip is a well-documented phenomenon. When developers first adopt AI tools, they often experience:
 - Slower initial progress as they learn new workflows
 - Frustration with tool limitations

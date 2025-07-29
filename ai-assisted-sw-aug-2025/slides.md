@@ -19,7 +19,23 @@ src: ./slides/ai-journey.md
 ---
 
 ---
+src: ./slides/get-good.md
+---
+
+---
+src: ./slides/helps-humans.md
+---
+
+---
 src: ./slides/ai-timeline.md
+---
+
+---
+src: ./slides/gap.md
+---
+
+---
+src: ./slides/your-xp-so-far.md
 ---
 
 ---
@@ -27,7 +43,7 @@ src: ./slides/not-vibing.md
 ---
 
 ---
-src: ./slides/conversational-agents.md
+src: ./slides/new-term.md
 ---
 
 ---
@@ -40,6 +56,10 @@ src: ./slides/exercise-tests-for-gilded-rose.md
 
 ---
 src: ./slides/accountability-ownership.md
+---
+
+---
+src: ./slides/conversational-agents.md
 ---
 
 ---
@@ -80,4 +100,12 @@ src: ./slides/heuristic-09-simpler-way.md
 
 ---
 src: ./slides/heuristic-10-task-list.md
+---
+
+---
+src: ./slides/meta-prompting.md
+---
+
+---
+src: ./slides/workflow.md
 ---
