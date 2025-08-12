@@ -111,5 +111,13 @@ src: ./slides/workflow.md
 ---
 
 ---
+src: ./slides/context-window-management.md
+---
+
+---
+src: ./slides/context-window-subagents.md
+---
+
+---
 src: ./slides/exercise-how-to-build-an-agent.md
 ---
