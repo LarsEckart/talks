@@ -4,7 +4,7 @@ layout: default
 
 # Building AI Agents - Core Concept
 
-## The Agent Reality
+
 
 - **Agents are just 300 lines of code running in a loop with LLM tokens**
 - The model does the heavy lifting, not complex architecture

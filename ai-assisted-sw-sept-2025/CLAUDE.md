@@ -29,18 +29,25 @@ npm install
 
 ## Slide Structure & Content Organization
 
-**Current slide topics** (in presentation order):
-- Introduction and agenda slides
-- AI agent fundamentals and architecture
-- Context window management and allocations
-- Library dependency strategies
-- Development workflows (Ralph method, vibecoding)
-- LLM selection frameworks
-- Career transformation insights
-- Practical applications (MCP servers, Git workflows)
-- Advanced concepts (subagents, deliberate practice)
-
 **Slide format**: Each slide file starts with Slidev frontmatter (`---\nlayout: default\n---`) followed by markdown content. Speaker notes are included as HTML comments (`<!-- -->`).
+
+### Image-Right Layout Scaling Issue & Solution
+
+**Problem**: Slidev's `image-right` or `image-left` layout automatically scales images to fill the available space, often causing cropping of important content at edges.
+
+**Solution**: Add white padding to images using macOS `sips` command:
+```bash
+# Add 100px padding on all sides to prevent cropping
+sips --padToHeightWidth [original_height+200] [original_width+200] --padColor FFFFFF input.png --out output-padded.png
+```
+
+**Example**:
+```bash
+# For a 707x517 image, add 200px total padding (100px each side)
+sips --padToHeightWidth 717 907 --padColor FFFFFF public/agentsmd.png --out public/agentsmd-wide-padded.png
+```
+
+This ensures all content remains visible when Slidev scales the image to fit the layout constraints.
 
 ## Adding New Slides
 
@@ -48,11 +55,3 @@ npm install
 2. Include Slidev frontmatter header with layout specification
 3. Add slide reference to `slides.md` in desired presentation order
 4. Use consistent formatting: `# Title`, bullet points, speaker notes as comments
-
-## Deployment Configuration
-
-- **Netlify**: Configured in `netlify.toml` (Node 20, SPA redirects)
-- **Vercel**: Configured in `vercel.json` (SPA rewrites)
-- **Build output**: Static files generated to `dist/` directory
-
-The presentation content is derived from comprehensive analysis of AI development articles, organized into a coherent learning progression from fundamentals to advanced practices.

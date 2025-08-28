@@ -20,17 +20,28 @@
 - JavaScript/Vue (if used): follow ES modules, prefer clear names over abbreviations.
 
 ## Testing Guidelines
-- No formal test suite. Validate by running `npm run dev` and reviewing slides.
-- Check links, images, and theme rendering. Build locally with `npm run build` before PRs.
+- No formal test suite. Validate by running `npm run dev` and reviewing slides using playwright mcp.
+- Check links, images, and theme rendering. Build locally with `npm run build`.
 
-## Commit & Pull Request Guidelines
-- Commits: imperative mood and scoped, e.g., `slides: add overview`, `theme: set apple-basic`.
-- Keep changes focused; include rationale in the body when non-trivial.
-- PRs: clear description, screenshots or GIFs of key slides, and any preview URL.
-- Link related issues. Note breaking changes in the PR description.
+## Image Handling for Slidev Layouts
 
-## Security & Configuration Tips
-- Node: use v18+ locally; Netlify targets Node `20` per `netlify.toml`.
-- Do not commit build artifacts (`dist/`) or exports (`slides-export/`, PDFs).
-- No secrets required; avoid embedding tokens in content.
+### Image-Right Layout Scaling Solution
+When using `layout: image-right`, Slidev automatically scales images to fill available space, which can crop important content at edges.
 
+**Fix**: Add white padding around images before using them:
+```bash
+# Use macOS sips to add padding (prevents cropping when scaled)
+sips --padToHeightWidth [height+200] [width+200] --padColor FFFFFF source.png --out padded.png
+```
+
+**Workflow**:
+1. Check image dimensions: `sips -g pixelWidth -g pixelHeight image.png`
+2. Add 100px padding on all sides: `sips --padToHeightWidth [h+200] [w+200] --padColor FFFFFF image.png --out image-padded.png`
+3. Reference padded version in slide frontmatter: `image: image-padded.png`
+
+## Adding New Slides
+
+1. Create new `.md` file in `slides/` directory using kebab-case naming
+2. Include Slidev frontmatter header with layout specification
+3. Add slide reference to `slides.md` in desired presentation order
+4. Use consistent formatting: `# Title`, bullet points, speaker notes as comments

@@ -1,15 +1,20 @@
 ---
-layout: default
+layout: image-right
+image: https://plus.unsplash.com/premium_photo-1668373587657-0211ba2b8805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8dG9vbHN8ZW58MHx8fHwxNzU2MzcwMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080
 ---
 
 # Tools Available Now
 
-## Your AI Development Arsenal
 
-- **ChatGPT** - Conversational problem-solving and code generation
-- **GitHub Copilot** - Real-time code completion in your editor
-- **Claude Code** - Terminal-native AI for complex development tasks
-- **Cursor** - AI-first code editor with deep context understanding
+
+- **ChatGPT**
+- **GitHub Copilot**
+- ~~Cursor~~
+- **Codex**
+- ~~OpenCode~~
+- ~~Claude Code~~
+- ~~Gemini CLI~~
+- ~~Warp~~
 
 <!--
 Let's be practical - you don't need to wait for the future of AI development. The tools that can transform your productivity are available right now, today. Each serves a different purpose in your development workflow.

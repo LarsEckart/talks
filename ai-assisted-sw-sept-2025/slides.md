@@ -3,6 +3,10 @@
 theme: apple-basic
 transition: slide-left
 mdc: true
+colorSchema: auto
+fonts:
+  sans: Inter
+  mono: Fira Code
 ---
 
 ---
@@ -18,31 +22,22 @@ src: ./slides/tools-available.md
 src: ./slides/agent-fundamentals.md
 ---
 ---
-src: ./slides/context-allocations.md
----
----
-src: ./slides/library-dependency-shift.md
+src: ./slides/mcp-introduction.md
 ---
 ---
 src: ./slides/llm-model-selection.md
 ---
 ---
-src: ./slides/playful-ai-interaction.md
+src: ./slides/library-dependency-shift.md
 ---
 ---
-src: ./slides/ktlo-automation.md
----
----
-src: ./slides/mirrors-slides.md
----
----
-src: ./slides/play-insights.md
----
----
-src: ./slides/overton-window-slides.md
+src: ./slides/context-allocations.md
 ---
 ---
 src: ./slides/gutter-slides.md
+---
+---
+src: ./slides/slides-redlining.md
 ---
 ---
 src: ./slides/subagents-architecture.md
@@ -51,14 +46,29 @@ src: ./slides/subagents-architecture.md
 src: ./slides/subagents-benefits.md
 ---
 ---
-src: ./slides/slides-redlining.md
+src: ./slides/playful-ai-interaction.md
 ---
 ---
-src: ./slides/mcp-introduction.md
+src: ./slides/play-insights.md
+---
+---
+src: ./slides/mirrors-slides.md
 ---
 ---
 src: ./slides/ai-coding-workflow-enhancement.md
 ---
 ---
 src: ./slides/practical-ai-coding-principles.md
+---
+---
+src: ./slides/codex.md
+---
+---
+src: ./slides/codex-memory.md
+---
+---
+src: ./slides/codex-settings.md
+---
+---
+src: ./slides/codex-settings-example.md
 ---
