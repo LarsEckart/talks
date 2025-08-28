@@ -12,5 +12,11 @@ layout: default
 - Focus on systematic integration rather than ad-hoc usage
 
 <!--
-This slide synthesizes the practical recommendations from Huntley's approach. The emphasis on design specifications suggests that AI works best when given clear requirements and context. The focus on compiler-driven languages indicates that AI-generated code needs strong validation mechanisms. The key insight is that successful AI-assisted development requires both rapid generation capabilities and robust verification systems working in harmony.
+After all the theory and future predictions, let's get practical. These principles come from teams actually shipping AI-generated code to production and learning what works versus what creates technical debt.
+
+First, AI needs context to be effective. Vague prompts produce vague code. But detailed design specifications? That's where AI shines. Give it a clear contract, defined interfaces, and explicit requirements, and it will generate code that often exceeds human quality standards.
+
+Second, choose your languages strategically. TypeScript over JavaScript. Rust over C. Languages with strong type systems and compiler checks catch AI mistakes before they become production bugs. The AI generates rapidly, the compiler validates thoroughly - it's a perfect partnership.
+
+The teams succeeding with AI aren't just throwing prompts at it randomly. They're systematic. They're treating AI as a powerful but untrained junior developer who needs clear guidance and strong guardrails to produce professional-quality work.
 -->

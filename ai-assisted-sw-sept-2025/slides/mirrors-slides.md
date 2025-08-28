@@ -1,5 +1,4 @@
 ---
-theme: default
 background: https://source.unsplash.com/1920x1080/?mirror,reflection
 title: 'LLMs as Mirrors: The Operator Skill Reality'
 info: |

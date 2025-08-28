@@ -1,5 +1,4 @@
 ---
-theme: default
 background: /backgrounds/gradient-1.jpg
 class: text-center
 highlighter: shiki

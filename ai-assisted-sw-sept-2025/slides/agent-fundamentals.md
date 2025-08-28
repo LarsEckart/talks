@@ -11,5 +11,7 @@ layout: default
 - Simple primitives: Read files, List files, Bash commands, Edit files, Code search
 
 <!--
-The key insight here is that AI agents aren't complex systems - they're surprisingly simple. Geoffrey Huntley emphasizes that successful agents rely on the LLM's capabilities rather than sophisticated code. This democratizes agent building for developers who understand these five basic primitives.
+Here's the first major revelation that will change how you think about AI agents: they're not the complex, mysterious systems you might imagine. Geoffrey Huntley, who's built agents that handle millions of operations, discovered something profound - the most successful agents are built on just five simple operations.
+
+This is liberating news for developers. You don't need to understand complex AI architectures or machine learning theory. If you can work with files, run commands, and understand basic text processing, you already have everything needed to build production-grade AI agents. The LLM does the heavy cognitive lifting - your job is to give it the right tools and let it work.
 -->

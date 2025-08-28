@@ -1,5 +1,4 @@
 ---
-theme: default
 highlighter: prism
 lineNumbers: false
 info: |
