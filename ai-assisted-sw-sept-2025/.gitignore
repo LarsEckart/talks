@@ -63,3 +63,6 @@ coverage/
 slides-export.pdf
 slides-export/
 
+# Playwright MCP
+.playwright-mcp/
+
