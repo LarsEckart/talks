@@ -8,3 +8,5 @@ image: /codex-cli-padded.png
 Lightweight coding agent that runs in your terminal
 
 `npm i -g @openai/codex`
+
+*The Codex CLI officially supports macOS and Linux.* Windows support is still experimental—we recommend running in WSL.

@@ -2,4 +2,4 @@
 layout: default
 ---
 
-<img src="./ai-plausible-answer.png" style="max-width: 90%; max-height: 85vh; object-fit: contain; margin: -1rem auto 0; display: block;" />
+<img src="/ai-plausible-answer-padded.png" style="max-width: 90%; max-height: 99vh; object-fit: contain; margin: -12rem auto 0; display: block;" />
