@@ -2,13 +2,16 @@
 layout: default
 ---
 
-# LLMs Are Like Cars
-
-## Different Models for Different Jobs
+# Different Models for Different Jobs
 
 - **Not all LLMs are interchangeable** - each has unique "sounds, properties and use cases"
 - **Selection matters beyond specs** - context window and token cost aren't everything
-- **Look deeper at latent patterns** - understand what each model does best
+- **Players**
+  - OpenAI (GPT-5, GPT-4.1, o3, o4, Codex)
+  - Anthropic (Claude Sonnet/Opus, Claude Code)
+  - Google (Gemini, Gemini CLI)
+  - "just consumers"
+    - GitHub Copilot, Cursor, Amp, OpenCode
 
 <!--
 Here's where most AI projects go wrong from day one: teams pick their LLM based on a spec sheet comparison. They look at context window size and token costs like they're comparing phone plans, then wonder why their AI agent feels "off" or produces inconsistent results.

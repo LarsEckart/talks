@@ -16,9 +16,6 @@ src: ./slides/screenshot-slide.md
 src: ./slides/timeline.md
 ---
 ---
-src: ./slides/model-comparison.md
----
----
 src: ./slides/active-users.md
 ---
 ---
@@ -31,25 +28,22 @@ src: ./slides/what-do-we-talk-about-today.md
 src: ./slides/tools-available.md
 ---
 ---
+src: ./slides/model-comparison.md
+---
+---
 src: ./slides/agent-fundamentals.md
 ---
 ---
 src: ./slides/mcp-introduction.md
 ---
 ---
-src: ./slides/llm-model-selection.md
----
----
-src: ./slides/library-dependency-shift.md
----
----
-src: ./slides/context-allocations.md
----
----
-src: ./slides/gutter-slides.md
+src: ./slides/mcp-tools.md
 ---
 ---
 src: ./slides/slides-redlining.md
+---
+---
+src: ./slides/context-allocations.md
 ---
 ---
 src: ./slides/subagents-architecture.md
@@ -58,7 +52,10 @@ src: ./slides/subagents-architecture.md
 src: ./slides/subagents-benefits.md
 ---
 ---
-src: ./slides/playful-ai-interaction.md
+src: ./slides/llm-model-selection.md
+---
+---
+src: ./slides/library-dependency-shift.md
 ---
 ---
 src: ./slides/play-insights.md

@@ -7,6 +7,7 @@ layout: default
 - **Less is more**: Adding more tools to an LLM's context window degrades output quality and increases unexpected behavior
 - **Context window reality check**: Advertised sizes are misleading - actual usable context is much smaller after system prompts
 - **Practical limit**: Recommended ~100k tokens before starting fresh session
+- **Effective Context Length**
 
 <!--
 This slide addresses one of the biggest misconceptions in AI development today. Most teams think: "More tools equals more capability." But the reality from production deployments tells a different story.

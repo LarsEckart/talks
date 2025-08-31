@@ -2,11 +2,13 @@
 layout: default
 ---
 
-# AI Subagents - Next Evolution
+# Subagents
+
+currently: Claude Code, Amp
 
 ## The Context Window Problem
 
-- **Current agents waste precious context (RAM) in death spirals**
+- **Current agents waste precious context in death spirals**
 - Single context window gets consumed inefficiently on complex tasks
 - Agents get stuck when encountering problems with no recovery mechanism
 

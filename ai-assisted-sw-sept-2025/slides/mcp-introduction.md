@@ -4,7 +4,6 @@ layout: default
 
 # Model Context Protocol (MCP)
 
-## The Universal Language for AI-Tool Integration
 
 - Universal specification for LLM-tool integration
 - Enables remote procedure calls between AI models and external systems

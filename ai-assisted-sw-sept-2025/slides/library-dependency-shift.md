@@ -2,13 +2,14 @@
 layout: default
 ---
 
-# The Library Dependency Shift
+# The Library Dependency Shift (?)
 
-## AI is Changing How We Use Third-Party Libraries
-
-- Developers are reducing external dependencies in favor of AI-generated custom libraries
+- Reduce external dependencies in favor of AI-generated custom libraries
 - Generate code tailored exactly to project constraints without compromises
 - Eliminate reliance on individual maintainers and their availability
+- Peek: https://github.com/LarsEckart/JCC
+
+
 
 <!--
 We're witnessing a fundamental shift that challenges decades of software engineering orthodoxy. For years, we've been taught to "don't reinvent the wheel" - to lean heavily on open source libraries and frameworks. But AI is changing this calculus in ways most developers haven't fully grasped yet.
