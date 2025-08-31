@@ -14,6 +14,7 @@ image: https://plus.unsplash.com/premium_photo-1668373587657-0211ba2b8805?crop=e
 - ~~OpenCode~~
 - ~~Claude Code~~
 - ~~Gemini CLI~~
+- ~~Qwen Code~~
 - ~~Warp~~
 
 <!--

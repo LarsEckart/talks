@@ -13,6 +13,18 @@ fonts:
 src: ./slides/screenshot-slide.md
 ---
 ---
+src: ./slides/timeline.md
+---
+---
+src: ./slides/model-comparison.md
+---
+---
+src: ./slides/active-users.md
+---
+---
+src: ./slides/acceptance-rate.md
+---
+---
 src: ./slides/what-do-we-talk-about-today.md
 ---
 ---
@@ -71,4 +83,20 @@ src: ./slides/codex-settings.md
 ---
 ---
 src: ./slides/codex-settings-example.md
+---
+---
+src: ./slides/requirements-and-design-guidelines.md
+---
+---
+src: ./slides/testing-and-validation.md
+---
+---
+src: ./slides/gpt5-overview.md
+---
+---
+src: ./slides/gpt5-core-principles.md
+---
+src: ./slides/gpt5-coding-best-practices.md
+---
+src: ./slides/gpt5-response-formatting.md
 ---
