@@ -34,12 +34,12 @@ h1 {
 
 </v-clicks>
 
-<!-- 
+<!--
 Speaker notes:
 
 Context window pollution happens when agents accumulate "garbage tokens" that clutter the conversation context.
 
-Context window pollution is a critical challenge in agent development that many developers overlook. 
+Context window pollution is a critical challenge in agent development that many developers overlook.
 
 When agents perform exploratory tasks like searching through codebases or running verbose commands, they accumulate "garbage tokens" - information that was necessary for a specific subtask but clutters the main conversation context.
 

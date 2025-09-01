@@ -27,4 +27,3 @@ Speaker Notes:
 - Full Auto mode gives maximum productivity but requires trust in the AI
 - Consider your team's comfort level and security requirements
 -->
-

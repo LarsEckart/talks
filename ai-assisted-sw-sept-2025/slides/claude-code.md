@@ -31,3 +31,4 @@ h1 {
 * custom slash commands
 * subagents
 * pass-through commands
+* type `/` and explore!

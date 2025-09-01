@@ -27,25 +27,25 @@ h1 {
 
 # Find the issue myself
 
-<v-click>
+
 
 **Give it 2-3 chances, then investigate yourself**
 
-</v-click>
 
-<v-click>
+
+
 
 - Coding agents can get stuck in debugging loops
 - Use breakpoints, logs, and human intuition
 - Once you know the issue, relay it back to the agent
 
-</v-click>
 
-<v-click>
+
+
 
 **Human debugging + AI implementation = efficiency**
 
-</v-click>
+
 
 <!--
 This heuristic addresses one of the biggest criticisms of coding agents - getting stuck in debugging loops. The solution isn't to abandon AI, but to recognize when human intervention is needed.

@@ -27,26 +27,26 @@ h1 {
 
 # "Is there a simpler way to do this?"
 
-<v-click>
+
 
 **One of the most powerful follow-up questions**
 
-</v-click>
 
-<v-click>
+
+
 
 - Challenge the agent to simplify its approach
 - Usually the answer is "yes" or "You're absolutely right!"
 - Works even when you don't see the simpler way
 - Forces reconsideration of complexity
 
-</v-click>
 
-<v-click>
+
+
 
 **Simple > Complex (always)**
 
-</v-click>
+
 
 <!--
 This heuristic leverages one of programming's fundamental principles: simplicity is better than complexity. Claude, like many developers, can sometimes overcomplicate solutions.

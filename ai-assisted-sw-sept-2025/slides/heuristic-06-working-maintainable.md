@@ -27,26 +27,26 @@ h1 {
 
 # Working → Maintainable
 
-<v-click>
+
 
 **After the code works, don't stop there**
 
-</v-click>
 
-<v-click>
+
+
 
 - Software design is about making the next change easy
 - Ask the agent to review its own code
 - Suggest refactorings to improve design
 - Code reviews are still a reality - humans need to understand
 
-</v-click>
 
-<v-click>
+
+
 
 **Iterate until you're proud to ship it**
 
-</v-click>
+
 
 <!--
 This heuristic pushes back against the idea that "code won't matter in the AI future." Even with AI assistance, we still need maintainable, understandable code. Working software is just the first step.

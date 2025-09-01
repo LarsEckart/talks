@@ -21,4 +21,3 @@ h1 {
 <!--
 Guide stresses blending into the existing design system, small safe edits, and verification. Encourage deterministic changes, clear commit‑sized diffs, and adherence to project conventions.
 -->
-

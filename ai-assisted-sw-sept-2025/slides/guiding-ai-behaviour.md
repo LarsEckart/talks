@@ -38,13 +38,13 @@ Think of your standards as **training data for your AI assistant**—the clearer
 <v-clicks>
 
 - Coding style guides
-- Architectural principles  
+- Architectural principles
 - Development processes
 - Library usage guidelines
 
 </v-clicks>
 
-<!-- 
+<!--
 
 Speaker notes:
 

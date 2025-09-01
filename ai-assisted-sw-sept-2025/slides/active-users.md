@@ -29,7 +29,7 @@ h1 {
 
 Steady growth in AI-assisted development tool adoption, with total users climbing from ~40 to ~75 daily active users over six months.
 
-<!-- 
+<!--
 This chart shows the growth trajectory of AI coding tools in an organization:
 - Total users (red bars) show steady adoption growth from Feb to Aug
 - Chat users (green bars) represent more engaged users utilizing conversational AI features

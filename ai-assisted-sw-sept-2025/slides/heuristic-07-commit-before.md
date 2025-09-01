@@ -27,13 +27,13 @@ h1 {
 
 # Commit before prompting
 
-<v-click>
+
 
 **Working with agents requires version control discipline**
 
-</v-click>
 
-<v-click>
+
+
 
 Workflow:
 1. Prompt until the code works
@@ -42,13 +42,13 @@ Workflow:
 4. **Commit**
 5. Push remotely
 
-</v-click>
 
-<v-click>
+
+
 
 **Committing is cheap**
 
-</v-click>
+
 
 <!--
 This heuristic is about risk management when working with AI. Since you can't predict exactly what changes Claude will make, having clean commit points allows you to easily revert if things go wrong.

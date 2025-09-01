@@ -27,13 +27,10 @@ h1 {
 
 # Work from a task list
 
-<v-click>
+
 
 **Make a markdown file and organize your thoughts**
 
-</v-click>
-
-<v-click>
 
 Benefits:
 - Reduces cognitive load
@@ -41,13 +38,10 @@ Benefits:
 - Reduces risk of forgetting important tasks
 - Creates shared context with the agent
 
-</v-click>
 
-<v-click>
 
 **Working with AI is like learning to pair program all over again**
 
-</v-click>
 
 <!--
 This final heuristic brings together the collaborative theme that runs through all ten heuristics. Task lists provide structure and shared context when working with AI, just like they do when working with human partners.

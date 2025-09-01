@@ -13,16 +13,16 @@ h1 {
 
 ## Separate Context Windows for Complex Tasks
 
-<v-click>
+
 
 <div class="mt-8 p-6 bg-red-50 rounded-xl border-2 border-red-300">
 <h3 class="text-2xl font-bold text-red-700 mb-4">⚠️ The Problem</h3>
 <p class="text-lg text-gray-700">These "garbage tokens" muddy the agent's ability to parse what matters and maintain the entire corpus of work</p>
 </div>
 
-</v-click>
 
-<v-click>
+
+
 
 <div class="mt-8 p-6 bg-blue-50 rounded-xl border-2 border-blue-300">
 <h3 class="text-2xl font-bold text-blue-700 mb-4">✅ The Solution</h3>
@@ -33,7 +33,7 @@ h1 {
 </ul>
 </div>
 
-</v-click>
+
 
 <!--
 Speaker notes:

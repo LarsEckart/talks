@@ -27,26 +27,26 @@ h1 {
 
 # Make the agents experience the failure
 
-<v-click>
+
 
 **Don't just copy-paste errors**
 
-</v-click>
 
-<v-click>
+
+
 
 - Have it run the app/tests itself
 - Let it see the failures firsthand
 - Creates a feedback loop: try → see result → adjust
 - The agents "learn" from direct experience
 
-</v-click>
 
-<v-click>
+
+
 
 **Direct experience > secondhand descriptions (but both work)**
 
-</v-click>
+
 
 <!--
 This heuristic leverages Claude's ability to directly interact with your development environment. Rather than being a middleman describing errors, let Claude discover and experience them directly.

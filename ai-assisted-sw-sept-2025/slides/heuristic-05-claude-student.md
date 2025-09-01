@@ -27,23 +27,23 @@ h1 {
 
 # The student
 
-<v-click>
+
 
 **Coding agents need mentoring along the way**
 
-</v-click>
 
-<v-click>
+
+
 
 - Store learnings in .md files for future sessions
 
-</v-click>
 
-<v-click>
+
+
 
 **Retaining state is on you!**
 
-</v-click>
+
 
 <!--
 This heuristic recognizes that AI coding assistants are incredibly capable but need continuous education about your specific approaches to software development. They're like eager junior developers who can learn and adapt to your style.

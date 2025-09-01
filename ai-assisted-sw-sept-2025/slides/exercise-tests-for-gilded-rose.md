@@ -33,7 +33,7 @@ Write tests for the Gilded Rose kata.
 
 Then iterate on it until they are "right".
 
-Then create `github-instructions.md` file
+Then create `AGENTS.md` file
 
 Then delete tests
 

@@ -27,28 +27,28 @@ h1 {
 
 # Accountability and Ownership
 
-<v-click>
+
 
 **AI can assist, but accountability remains with humans**
 
-</v-click>
 
-<v-click>
+
+
 
 - **AI cannot be accountable**
 - **Avoid rubber-stamping**
 - **Human oversight required**
 
-</v-click>
 
-<v-click>
+
+
 
 **Key takeaways**
 
 - Humans own every line in production
 - Rubber-stamping is a process failure
 
-</v-click>
+
 
 <!--
 AI cannot be accountable: Humans must always take responsibility for AI-generated code

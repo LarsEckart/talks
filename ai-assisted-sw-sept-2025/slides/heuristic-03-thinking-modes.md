@@ -27,30 +27,30 @@ h1 {
 
 # Extended Thinking Modes
 
-<v-click>
+
 
 **with Claude models**
 
-</v-click>
 
-<v-click>
+
+
 
 When to trigger thinking modes:
 - On complex initial prompts requiring deep analysis
 
-</v-click>
 
-<v-click>
+
+
 
 "think" → "think hard" → "think harder" → "ultrathink."
 
-</v-click>
 
-<v-click>
+
+
 
 **Like humans, coding agents perform better when tracking their thought process**
 
-</v-click>
+
 
 <!--
 Extended thinking modes are Claude's equivalent to asking someone to "think out loud" during pair programming. While they cost more tokens, they're invaluable for complex problems where you need Claude to use its full cognitive resources.
