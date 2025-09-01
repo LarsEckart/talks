@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Codex Settings
 
 ## My Configuration

@@ -1,4 +1,6 @@
 ---
+layout: default
+---
 
 # Minimal AI Application Architecture
 

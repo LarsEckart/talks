@@ -1,4 +1,6 @@
 ---
+layout: default
+---
 
 # Prompting: Clear and Precise
 

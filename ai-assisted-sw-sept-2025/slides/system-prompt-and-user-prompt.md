@@ -1,4 +1,6 @@
 ---
+layout: default
+---
 
 # System Prompt and User Prompt
 

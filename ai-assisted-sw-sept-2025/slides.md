@@ -121,9 +121,6 @@ src: ./slides/active-users.md
 src: ./slides/acceptance-rate.md
 ---
 ---
-src: ./slides/what-do-we-talk-about-today.md
----
----
 src: ./slides/tools-available.md
 ---
 ---
