@@ -3,6 +3,28 @@ layout: image-right
 image: https://plus.unsplash.com/premium_photo-1668373587657-0211ba2b8805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8dG9vbHN8ZW58MHx8fHwxNzU2MzcwMDQ4fDA&ixlib=rb-4.1.0&q=80&w=1080
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.centered-image img {
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
 # Tools Available Now
 
 

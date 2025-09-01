@@ -1,6 +1,6 @@
 ---
-layout: image-left
-image: /codex-cli-padded.png
+layout: image-right
+image: <todo: find anthropic logo>
 ---
 
 <style>
@@ -25,10 +25,9 @@ h1 {
 }
 </style>
 
-# OpenAI Codex CLI
+# Claude Code
 
-Lightweight coding agent that runs in your terminal
-
-`npm i -g @openai/codex`
-
-*The Codex CLI officially supports macOS and Linux.* Windows support is still experimental—we recommend running in WSL.
+* most advanced/features
+* custom slash commands
+* subagents
+* pass-through commands

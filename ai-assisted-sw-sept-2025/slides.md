@@ -37,6 +37,9 @@ src: ./slides/prompting-clear-and-precise-1.md
 src: ./slides/prompting-clear-and-precise-2.md
 ---
 ---
+src: ./slides/whisper.md
+---
+---
 src: ./slides/system-prompt-and-user-prompt.md
 ---
 ---

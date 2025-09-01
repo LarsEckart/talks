@@ -3,6 +3,13 @@ layout: two-col-60-40
 image: /timeline.jpg
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # AI Development Timeline
 
 

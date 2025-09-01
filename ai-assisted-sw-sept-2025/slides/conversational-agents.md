@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # Conversational Agents
 
 <div class="grid grid-cols-2 gap-4 mt-4">

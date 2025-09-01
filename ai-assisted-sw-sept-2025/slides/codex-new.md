@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # Fresh Context
 
 - AI agents become unpredictable over long conversations

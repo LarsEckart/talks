@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # The Library Dependency Shift (?)
 
 - Reduce external dependencies in favor of AI-generated custom libraries

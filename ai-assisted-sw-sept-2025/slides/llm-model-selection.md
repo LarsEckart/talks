@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # Different Models for Different Jobs
 
 - **Not all LLMs are interchangeable** - each has unique "sounds, properties and use cases"

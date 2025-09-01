@@ -3,6 +3,28 @@ layout: image-right
 image: https://images.unsplash.com/photo-1508935620299-047e0e35fbe3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.centered-image img {
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(88, 110, 117, 0.3);
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
 # AI Context Windows
 
 Understanding where your AI tools break down

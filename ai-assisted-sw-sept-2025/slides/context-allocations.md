@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # The Context Window Allocation Problem
 
 - **Less is more**: Adding more tools to an LLM's context window degrades output quality and increases unexpected behavior

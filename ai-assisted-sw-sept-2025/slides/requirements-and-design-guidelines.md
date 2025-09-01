@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+h1 {
+  color: #2B90B6;
+  margin-bottom: 2rem;
+}
+</style>
+
 # Requirements and Design Guidelines
 
 Before starting any coding task, follow these essential steps:
