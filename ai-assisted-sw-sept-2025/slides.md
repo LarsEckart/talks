@@ -10,6 +10,10 @@ fonts:
 ---
 
 ---
+layout: center
+---
+# AI Assisted Software Development
+---
 src: ./slides/screenshot-slide.md
 ---
 ---
@@ -31,6 +35,18 @@ src: ./slides/disclaimer-it-depends-2.md
 src: ./slides/pair-ai-journey.md
 ---
 ---
+src: ./slides/learning-curve-dip.md
+---
+---
+src: ./slides/get-good.md
+---
+---
+src: ./slides/gap.md
+---
+---
+src: ./slides/prompting-section.md
+---
+---
 src: ./slides/prompting-clear-and-precise-1.md
 ---
 ---
@@ -49,16 +65,10 @@ src: ./slides/minimal-ai-application-architecture.md
 src: ./slides/ai-application-architecture.md
 ---
 ---
-src: ./slides/learning-curve-dip.md
----
----
-src: ./slides/get-good.md
+src: ./slides/exercise-gandalf.md
 ---
 ---
 src: ./slides/helps-humans.md
----
----
-src: ./slides/gap.md
 ---
 ---
 src: ./slides/guiding-ai-behaviour.md
@@ -112,12 +122,6 @@ src: ./slides/workflow.md
 src: ./slides/context-window-management.md
 ---
 ---
-src: ./slides/context-window-subagents.md
----
----
-src: ./slides/exercise-how-to-build-an-agent.md
----
----
 src: ./slides/active-users.md
 ---
 ---
@@ -164,6 +168,9 @@ src: ./slides/mirrors-slides.md
 ---
 ---
 src: ./slides/practical-ai-coding-principles.md
+---
+---
+src: ./slides/exercise-how-to-build-an-agent.md
 ---
 ---
 src: ./slides/codex.md

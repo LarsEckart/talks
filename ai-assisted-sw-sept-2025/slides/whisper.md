@@ -11,9 +11,9 @@ image: https://images.unsplash.com/photo-1529939620248-273fd31a7cdf?fm=jpg&q=60&
   <div class="section-item" v-click>
     <ul class="bullet-list">
       <li>Rambling works surprisingly well</li>
-      <li>Natural speech patterns improve prompt clarity</li>
       <li>Faster than typing for complex explanations</li>
       <li>Reduces cognitive load when articulating problems</li>
+      <li>Prompt to get a prompt</li>
     </ul>
   </div>
 
