@@ -19,9 +19,10 @@ h1 {
 The best engineers extract far more value from AI tools.
 
 * __They communicate technical ideas clearly__
-* __They have “the mechanic’s touch”__
+* __They have "the mechanic's touch"__
 * __They have strong fundamentals__
 * __They have taste__
+* __They continue to learn__
 
 <!--
 
